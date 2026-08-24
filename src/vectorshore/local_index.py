@@ -83,6 +83,7 @@ if __name__ == "__main__":
     from src.ingestion.pdf_loader import extract_pdf_pages
     from src.chunking.text_chunker import chunk_pages
     from src.processing.document_processor import enrich_chunks
+    from src.embeddings.embedding_model import load_embedding_model
     import numpy as np
 
     pdf_path = (
@@ -109,6 +110,8 @@ if __name__ == "__main__":
     chunks = enrich_chunks(chunks=chunks, metadata=metadata)
 
     model = load_embedding_model()
+
+    indexed_chunks = build_local_index(chunks, model)
     
     query = (
     "Quel est le délai pour informer "
