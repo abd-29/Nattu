@@ -1,8 +1,27 @@
 from pathlib import Path
+
+import numpy as np
+
 from config import DATA_DIR
 
 import pymupdf
+from rapidocr import RapidOCR
 
+
+_ocr_engine = None
+
+
+def get_ocr_engine():
+    """
+    Load the OCR engine only when needed.
+    """
+
+    global _ocr_engine
+
+    if _ocr_engine is None:
+        _ocr_engine = RapidOCR()
+
+    return _ocr_engine
 
 def extract_pdf_units(path: Path) -> list[dict]:
     """
@@ -57,17 +76,18 @@ def extract_page_with_ocr(page) -> str:
     Extract text from a PDF page using OCR.
     """
 
-    text_page = page.get_textpage_ocr(
-        language="fra+eng",
-        dpi=300,
-        full=True,
-    )
+    pixmap = page.get_pixmap(dpi=300)
+    image = np.frombuffer(pixmap.samples, dtype=np.uint8)
+    image = image.reshape(pixmap.height, pixmap.width, pixmap.n)
 
-    return page.get_text(
-        "text",
-        textpage=text_page,
-        sort=True,
-    )
+    ocr_engine = get_ocr_engine()
+    result = ocr_engine(image)
+
+    if not result.txts:
+        return ""
+
+    return "\n".join(result.txts)
+
 
 
 
@@ -77,9 +97,10 @@ if __name__ == "__main__":
         DATA_DIR
         / "raw"
         / "quality"
-        / "QUA-INC-001_v3.pdf"
+        / "QUA-LEGACY-016_scan_2019.pdf"
     )
 
+    print(pdf_path)
     pages = extract_pdf_units(pdf_path)
 
     for page in pages:
