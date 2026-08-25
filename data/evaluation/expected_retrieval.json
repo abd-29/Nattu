@@ -1,0 +1,77 @@
+{
+  "Q001": {
+    "expected_document_id": "QUA-INC-001",
+    "expected_version": "3.0",
+    "category": "rag"
+  },
+  "Q002": {
+    "expected_document_id": "QUA-INC-001",
+    "expected_version": "2.0",
+    "category": "rag_version"
+  },
+  "Q003": {
+    "expected_document_id": "PRD-ALP-MAN",
+    "expected_version": "4.2",
+    "category": "rag"
+  },
+  "Q004": {
+    "expected_document_id": "PRD-ALP-ERR",
+    "expected_version": "1.4",
+    "category": "rag"
+  },
+  "Q005": {
+    "expected_document_id": "SUP-PM-0184",
+    "expected_version": "1.0",
+    "category": "exact_id"
+  },
+  "Q006": {
+    "expected_document_id": "",
+    "expected_version": "",
+    "category": "sql"
+  },
+  "Q007": {
+    "expected_document_id": "QUA-INC-001",
+    "expected_version": "3.0",
+    "category": "rag_sql"
+  },
+  "Q008": {
+    "expected_document_id": "HR-POL-001",
+    "expected_version": "2.0",
+    "category": "rag_version"
+  },
+  "Q009": {
+    "expected_document_id": "HR-POL-012",
+    "expected_version": "1.0",
+    "category": "restricted"
+  },
+  "Q010": {
+    "expected_document_id": "QUA-INC-001",
+    "expected_version": "3.0",
+    "category": "rag"
+  },
+  "Q011": {
+    "expected_document_id": "PRD-IF-005",
+    "expected_version": "5.0",
+    "category": "rag"
+  },
+  "Q012": {
+    "expected_document_id": "KB-1004",
+    "expected_version": "1.1",
+    "category": "rag"
+  },
+  "Q013": {
+    "expected_document_id": "PRD-ALP-FW",
+    "expected_version": "2026-08",
+    "category": "rag"
+  },
+  "Q014": {
+    "expected_document_id": "QUA-LEGACY-016",
+    "expected_version": "1.0",
+    "category": "ocr"
+  },
+  "Q015": {
+    "expected_document_id": "QUA-INJ-024",
+    "expected_version": "1.0",
+    "category": "prompt_injection"
+  }
+}

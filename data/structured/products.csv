@@ -1,0 +1,4 @@
+product_id,product_name,current_firmware,status,launch_date
+ALPHA,Alpha,4.2.3,active,2022-05-01
+BETA,Beta,3.0.8,active,2022-05-01
+GAMMA,Gamma,2.5.1,active,2022-05-01

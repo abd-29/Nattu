@@ -1,0 +1,61 @@
+customer_id,name,country,support_tier
+CUST-0001,ACME Industrie,Belgique,Premium
+CUST-0002,Orbit Systems,France,Standard
+CUST-0003,HexaRail,France,Standard
+CUST-0004,Mistral Energy,France,Premium
+CUST-0005,Aster Telecom,France,Standard
+CUST-0006,BluePeak,Belgique,Standard
+CUST-0007,Solis Robotics,France,Premium
+CUST-0008,NordCom,France,Standard
+CUST-0009,Altavia Systems,France,Standard
+CUST-0010,DeltaMed,France,Premium
+CUST-0011,ACME Industrie 2,Belgique,Standard
+CUST-0012,Orbit Systems 2,France,Standard
+CUST-0013,HexaRail 2,France,Premium
+CUST-0014,Mistral Energy 2,France,Standard
+CUST-0015,Aster Telecom 2,France,Standard
+CUST-0016,BluePeak 2,Belgique,Premium
+CUST-0017,Solis Robotics 2,France,Standard
+CUST-0018,NordCom 2,France,Standard
+CUST-0019,Altavia Systems 2,France,Premium
+CUST-0020,DeltaMed 2,France,Standard
+CUST-0021,ACME Industrie 3,Belgique,Standard
+CUST-0022,Orbit Systems 3,France,Premium
+CUST-0023,HexaRail 3,France,Standard
+CUST-0024,Mistral Energy 3,France,Standard
+CUST-0025,Aster Telecom 3,France,Premium
+CUST-0026,BluePeak 3,Belgique,Standard
+CUST-0027,Solis Robotics 3,France,Standard
+CUST-0028,NordCom 3,France,Premium
+CUST-0029,Altavia Systems 3,France,Standard
+CUST-0030,DeltaMed 3,France,Standard
+CUST-0031,ACME Industrie 4,Belgique,Premium
+CUST-0032,Orbit Systems 4,France,Standard
+CUST-0033,HexaRail 4,France,Standard
+CUST-0034,Mistral Energy 4,France,Premium
+CUST-0035,Aster Telecom 4,France,Standard
+CUST-0036,BluePeak 4,Belgique,Standard
+CUST-0037,Solis Robotics 4,France,Premium
+CUST-0038,NordCom 4,France,Standard
+CUST-0039,Altavia Systems 4,France,Standard
+CUST-0040,DeltaMed 4,France,Premium
+CUST-0041,ACME Industrie 5,Belgique,Standard
+CUST-0042,Orbit Systems 5,France,Standard
+CUST-0043,HexaRail 5,France,Premium
+CUST-0044,Mistral Energy 5,France,Standard
+CUST-0045,Aster Telecom 5,France,Standard
+CUST-0046,BluePeak 5,Belgique,Premium
+CUST-0047,Solis Robotics 5,France,Standard
+CUST-0048,NordCom 5,France,Standard
+CUST-0049,Altavia Systems 5,France,Premium
+CUST-0050,DeltaMed 5,France,Standard
+CUST-0051,ACME Industrie 6,Belgique,Standard
+CUST-0052,Orbit Systems 6,France,Premium
+CUST-0053,HexaRail 6,France,Standard
+CUST-0054,Mistral Energy 6,France,Standard
+CUST-0055,Aster Telecom 6,France,Premium
+CUST-0056,BluePeak 6,Belgique,Standard
+CUST-0057,Solis Robotics 6,France,Standard
+CUST-0058,NordCom 6,France,Premium
+CUST-0059,Altavia Systems 6,France,Standard
+CUST-0060,DeltaMed 6,France,Standard

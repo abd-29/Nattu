@@ -1,0 +1,5 @@
+group,allowed_classifications
+all_employees,Internal
+quality,Internal;Quality_Restricted
+hr,Internal;HR_CONFIDENTIAL
+management,Internal;HR_CONFIDENTIAL;Management_Restricted

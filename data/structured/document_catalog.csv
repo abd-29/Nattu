@@ -1,0 +1,105 @@
+relative_path,document_id,title,version,department,classification,status,language,extension,sha256,size_bytes,tags
+data/raw/quality/QUA-INC-001_v1_2023.pdf,QUA-INC-001,Gestion des incidents produits,1.0,quality,Internal,obsolete,fr,.pdf,28b3623663b26f7a316e33ac9d80578c971c5b9db0caca8551fb51254518ab92,30126,versioned
+data/raw/quality/QUA-INC-001_v2_2024.pdf,QUA-INC-001,Gestion des incidents produits,2.0,quality,Internal,obsolete,fr,.pdf,04c1d8c1d8602735ec905d6d52c4f381ee20f666e305ed3ff9a5b6f29daab190,30130,versioned
+data/raw/quality/QUA-INC-001_v3_2026.pdf,QUA-INC-001,Gestion des incidents produits,3.0,quality,Internal,active,fr,.pdf,c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d,31269,versioned
+data/raw/quality/QUA-CAPA-002_1-4.pdf,QUA-CAPA-002,Gestion des actions correctives et préventives,1.4,quality,Internal,active,fr,.pdf,de736b2b32ffbebffdc5c6f08c6b4a7030316adeef1798ad9e037e114da090d9,30158,
+data/raw/quality/QUA-NCR-003_2-1.pdf,QUA-NCR-003,Traitement des non-conformités,2.1,quality,Internal,active,fr,.pdf,2e777b6b1ad5df726c725860f1f8dd3f79fa3d7374f1aab4824b770ee5a9b340,30129,
+data/raw/quality/QUA-AUD-004_3-0.docx,QUA-AUD-004,Programme d'audits internes,3.0,quality,Internal,active,fr,.docx,80285573369ec8f173435357f9aa85e4d1d79e13c0cc20ee7edc401abdd3a100,37822,
+data/raw/quality/QUA-SUP-005_1-2.md,QUA-SUP-005,Qualification des fournisseurs,1.2,quality,Internal,active,fr,.md,dc813c2c30d14f266e94306693d76dcae69f32a1ac664b75fae9377add49745b,991,
+data/raw/quality/QUA-RISK-006_2-0.pdf,QUA-RISK-006,Analyse de risques produit,2.0,quality,Internal,active,fr,.pdf,007de7a536117634095ff81014b0ec9841c1facca403ea5c00bddcd694b0ac83,30143,
+data/raw/quality/QUA-CHANGE-007_2-3.pdf,QUA-CHANGE-007,Maîtrise des changements,2.3,quality,Internal,active,fr,.pdf,dc2e47ca28b333845800b25a91e8d2501cb5f183f6d5bc55a41cffc6250d6bf9,30248,
+data/raw/quality/QUA-DOC-008_4-0.docx,QUA-DOC-008,Gestion documentaire,4.0,quality,Internal,active,fr,.docx,68ee1156ddf8f5af976bfdf33f5460cfcac71e1e59bfaf48d367b55d8cc8a13f,37822,
+data/raw/quality/QUA-CAL-009_1-7.md,QUA-CAL-009,Étalonnage des équipements de mesure,1.7,quality,Internal,active,fr,.md,8b402b6603345d2efbb31e5ee213b7de566e55a66777dbc543a47bde510e3ad9,999,
+data/raw/quality/QUA-TRAIN-010_1-1.pdf,QUA-TRAIN-010,Habilitation qualité,1.1,quality,Internal,active,fr,.pdf,d1ec262482da246fa76ee65541dd049d6217c34788acde9f595f6b46cbb1b7f1,30114,
+data/raw/quality/QUA-ESC-011_1-0.pdf,QUA-ESC-011,Escalade qualité,1.0,quality,Internal,active,fr,.pdf,7cb47b3cfa5442fdf2b4ca6e07f5d87664bb76bc066c0c1751048cf0179a5ff3,30129,
+data/raw/quality/QUA-RECALL-012_1-0.docx,QUA-RECALL-012,Procédure de rappel produit,1.0,quality,Internal,active,fr,.docx,eb9ee7127387b1181e6da699527456a58fe8f2a36b746da6bc8a1b39a241e959,37835,
+data/raw/quality/QUA-MRB-013_1-0.md,QUA-MRB-013,Règles du Material Review Board,1.0,quality,Internal,active,fr,.md,12e5912dbc955c0a08473f48e454db0daa01368b57838ffbc6be9968f46d4b63,996,
+data/raw/quality/QUA-MET-014_2-2.pdf,QUA-MET-014,Métrologie - exigences générales,2.2,quality,Internal,active,fr,.pdf,1d4e407f72e7fcf32be5edbbfc6f5a9c653007651719be2005a1225068b2f2c5,31121,
+data/raw/quality/QUA-BUL-015_1-0.pdf,QUA-BUL-015,Bulletin qualité - connecteur série C,1.0,quality,Internal,active,fr,.pdf,4385337488bbeeb781c5a4181c4954b6571470b239e8bfce363b6aad174ac13a,30145,
+data/raw/quality/QUA-LEGACY-016_scan_2019.pdf,QUA-LEGACY-016,Ancienne instruction de contrôle final,1.0,quality,Internal,archived,fr,.pdf,650be4f88aa10b828deb162ac9b69c8744825817339988085ae11c655d931bca,83116,ocr_required;archived
+data/raw/quality/QUA-GLOSSARY-017_1-3.md,QUA-GLOSSARY-017,Glossaire qualité NovaTech,1.3,quality,Internal,active,fr,.md,e3646c27d1ce9d240873bcdb4600bd3989fd8e25e6dcbbacf217a31759fb2641,980,
+data/raw/quality/QUA-SEC-018_1-0.pdf,QUA-SEC-018,Gestion des incidents de sécurité produit,1.0,quality,Internal,active,fr,.pdf,386d7c5820eabe4ea29896fa41a660001a3c3f84233163d155cc5ea4399f8903,30147,
+data/raw/quality/QUA-CUSTOMER-019_2-0.pdf,QUA-CUSTOMER-019,Gestion des réclamations clients,2.0,quality,Internal,active,fr,.pdf,fbca1f9a96abc26efc2f65af4848a2258f7694f32d83e8f5540b6d124e9cc857,30771,
+data/raw/quality/QUA-SAMPLING-020_1-5.docx,QUA-SAMPLING-020,Plan d'échantillonnage contrôle réception,1.5,quality,Internal,active,fr,.docx,d3c51f8559be8a1061f85d785562a3cba8f57634fb23bd959a9e1a5aa7a1c99f,37850,
+data/raw/quality/QUA-ROOT-021_1-2.md,QUA-ROOT-021,Analyse de cause racine,1.2,quality,Internal,active,fr,.md,d902dad901083fae56efc0ed8a862bbc30bcd98346f5e93000e7df0f3f655394,975,
+data/raw/quality/QUA-RET-022_2026-Q2.pdf,QUA-RET-022,Retour d'expérience trimestriel,2026-Q2,quality,Internal,active,fr,.pdf,766ac2651e96f7c2c9ccae7ce256b46fc41f7bcf5033aac4c181fdda71c40e4f,30415,
+data/raw/quality/QUA-INJ-024_1-0.pdf,QUA-INJ-024,Note fournisseur reçue - test sécurité RAG,1.0,quality,Internal,active,fr,.pdf,0e0302dff2d7e0a775f25ac1c7d6e169dc57325a6dd3ecd293928c475c4a2b6c,30348,
+data/raw/quality/QUA-INC-001_v3_REFERENCE_COPY.pdf,QUA-INC-001,Gestion des incidents produits,3.0,quality,Internal,active,fr,.pdf,c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d,31269,exact_duplicate;reference_copy
+data/raw/products/PRD-ALP-MAN_4-2.pdf,PRD-ALP-MAN,Manuel technique Alpha,4.2,products,Internal,active,fr,.pdf,60787e2a3de0cec57c053e02b1efb1fd938b6b84834766658d5fe5cb50375542,30495,
+data/raw/products/PRD-ALP-DS_2-0.pdf,PRD-ALP-DS,Fiche technique Alpha,2.0,products,Internal,active,fr,.pdf,ccec5171e2dab791c0b064325a6466b4c5fc021f84a2858531bf4fd00b6f34f2,30092,
+data/raw/products/PRD-ALP-INST_3-1.docx,PRD-ALP-INST,Guide d'installation Alpha,3.1,products,Internal,active,fr,.docx,4e7c6d3e7f76ae343da65e0bb25346117161bb750ecab1c65105b325db245f78,37770,
+data/raw/products/PRD-ALP-MAINT_2-0.md,PRD-ALP-MAINT,Guide de maintenance Alpha,2.0,products,Internal,active,fr,.md,889db38e77bf6c95adf47e33459ecbc6e301288b66b6c509d5ed6fc5594b1533,831,
+data/raw/products/PRD-ALP-ERR_1-4.pdf,PRD-ALP-ERR,Catalogue des codes erreur Alpha,1.4,products,Internal,active,fr,.pdf,99880443532b90028ddbb9d478d6e33838fe0fbb49a813dfd63f457c49868064,29757,
+data/raw/products/PRD-ALP-FW_2026-08.pdf,PRD-ALP-FW,Matrice firmware Alpha,2026-08,products,Internal,active,fr,.pdf,7de2ca257949a363e39682982daa9419b56ed8be89dc3ada995bc3f3275dc01c,29734,
+data/raw/products/PRD-BET-MAN_3-0.pdf,PRD-BET-MAN,Manuel technique Beta,3.0,products,Internal,active,fr,.pdf,29fb2cb92b9e0a71a06455c39f1716eee05721282b0099db8ed86c9ad06c09f3,30494,
+data/raw/products/PRD-BET-DS_2-0.pdf,PRD-BET-DS,Fiche technique Beta,2.0,products,Internal,active,fr,.pdf,7f3ca062a5d8fb367e1313747291929d95d941c39e20a3cb0f549637de022836,30087,
+data/raw/products/PRD-BET-INST_3-1.docx,PRD-BET-INST,Guide d'installation Beta,3.1,products,Internal,active,fr,.docx,c8734807c88a674b5059b68c4efde090b6df5d2d83aabdfba67082a55eef56cf,37769,
+data/raw/products/PRD-BET-MAINT_2-0.md,PRD-BET-MAINT,Guide de maintenance Beta,2.0,products,Internal,active,fr,.md,f0228e9f064468659c657749910f059074c7afe9ec9460d3c46ee1a23ace2f57,830,
+data/raw/products/PRD-BET-ERR_1-4.pdf,PRD-BET-ERR,Catalogue des codes erreur Beta,1.4,products,Internal,active,fr,.pdf,70382071953455ac77a409a6cb91be8a44d44424fd11565cc292a9276acb74b3,29760,
+data/raw/products/PRD-BET-FW_2026-08.pdf,PRD-BET-FW,Matrice firmware Beta,2026-08,products,Internal,active,fr,.pdf,a81aa2a523ef3975efce91d425045adac6be18f0eeb0239a3d8aa299acf8aded,29728,
+data/raw/products/PRD-GAM-MAN_2-5.pdf,PRD-GAM-MAN,Manuel technique Gamma,2.5,products,Internal,active,fr,.pdf,ce0b148fb063a8b282185537defe54c283d85e8362c6c3773d8bc64ac5466bf6,30495,
+data/raw/products/PRD-GAM-DS_2-0.pdf,PRD-GAM-DS,Fiche technique Gamma,2.0,products,Internal,active,fr,.pdf,0f08d33ba78aa319bf00c2033a83af662e22d1958dd9312242409abc9d9ee592,30162,
+data/raw/products/PRD-GAM-INST_3-1.docx,PRD-GAM-INST,Guide d'installation Gamma,3.1,products,Internal,active,fr,.docx,34c427928e99de27e6cd7b8102998dd4218bc51a6cf459a91d825f2ccef08092,37769,
+data/raw/products/PRD-GAM-MAINT_2-0.md,PRD-GAM-MAINT,Guide de maintenance Gamma,2.0,products,Internal,active,fr,.md,f4bfe8b31f0547c39fc2db83dafd21d17976c9e3a1e76d73ac9b5610d404dd34,831,
+data/raw/products/PRD-GAM-ERR_1-4.pdf,PRD-GAM-ERR,Catalogue des codes erreur Gamma,1.4,products,Internal,active,fr,.pdf,b0493b25e790f29b0bb1be89a34ce9c3ab00b5a179719c1ce28c596d8b565208,29760,
+data/raw/products/PRD-GAM-FW_2026-08.pdf,PRD-GAM-FW,Matrice firmware Gamma,2026-08,products,Internal,active,fr,.pdf,d4f4a59494bffd73fdeceda824da05e6d16e374ac963c308786253e7cb8eaefe,29733,
+data/raw/products/PRD-ALP-RN41_4-1.txt,PRD-ALP-RN41,Notes de version Alpha 4.1,4.1,products,Internal,active,fr,.txt,ac64a64fdedfc85fce50a4b8d1480d58e9da324e6c18e4b444c8fe58d8bea81c,821,
+data/raw/products/PRD-ALP-RN42_4-2-3.txt,PRD-ALP-RN42,Notes de version Alpha 4.2.3,4.2.3,products,Internal,active,fr,.txt,8a96d5e525dd2960ca4c8b205657cc361262ebd94510846b1515ce10fc41ef23,826,
+data/raw/products/PRD-COMP-2026_2026-2.pdf,PRD-COMP-2026,Comparatif Alpha / Beta / Gamma,2026.2,products,Internal,active,fr,.pdf,3407091f169e9d455b36a2d67b6c35fcf3168c245fb3eca256c52bb22e306144,30141,
+data/raw/products/PRD-LIFE-2026_2026-2.pdf,PRD-LIFE-2026,Politique de cycle de vie produits,2026.2,products,Internal,active,fr,.pdf,0aeebfa60696674ab04c8c37f5213002e10577872b8f382b7237cc0e17fe003f,29757,
+data/raw/products/PRD-ENV-002_2-0.pdf,PRD-ENV-002,Exigences environnementales produits,2.0,products,Internal,active,fr,.pdf,d32a1784dffe30f23d2aae3c3ecb673d0e688001b0a785c3227d5ab90daae1a7,29775,
+data/raw/products/PRD-SAFE-001_1-0.pdf,PRD-SAFE-001,Consignes de sécurité produit Alpha,1.0,products,Internal,active,fr,.pdf,232b5ff0e87919f38cc2e604e536a820f981dc47e8ef04e7ff2b4bad1b076707,29894,
+data/raw/products/PRD-IF-005_5-0.pdf,PRD-IF-005,Interface de communication Alpha,5.0,products,Internal,active,fr,.pdf,1ec61304b425599eac7e9502780996431c0f758f9d20355707c40440f3d2722e,30375,
+data/raw/products/PRD-ALP-KI_2026-Q2.pdf,PRD-ALP-KI,Indicateurs fiabilité Alpha,2026-Q2,products,Internal,active,fr,.pdf,5a0c933bee7c0fcfa6259c333d3f28b05fc45d3e08f6eafa16a9f9bf0e653324,29761,
+data/raw/products/SUP-ALP-CONN_2-1.pdf,SUP-ALP-CONN,Supplier connector specification for Alpha,2.1,products,Internal,active,en,.pdf,6734086a0b19b55b6d9fa28e30a0085900d4461488429934e83d2da8cf299148,29576,english_source
+data/raw/products/SUP-BET-NET_1-5.pdf,SUP-BET-NET,Beta network controller integration note,1.5,products,Internal,active,en,.pdf,07433486bcaa801139a40dfcc209857ef6fb18da5399e493dcc44590ad535775,29414,english_source
+data/raw/products/SUP-GAM-SEAL_3-0.docx,SUP-GAM-SEAL,Gamma enclosure sealing guide,3.0,products,Internal,active,en,.docx,48a837a2408a9cdb6f16b2465689352a3e77db53a3ae7661af1a7aeade4eebd0,37666,english_source
+data/raw/products/PRD-API-ENG_1-8.md,PRD-API-ENG,NovaTech service API reference,1.8,products,Internal,active,en,.md,501e71c99f6aa9d4e53b6d6d4e25948bf369a78590e85566c2f0af69804d2ad0,653,english_source
+data/raw/products/PRD-EMC-ENG_2026-06.pdf,PRD-EMC-ENG,EMC laboratory report - product family,2026-06,products,Internal,active,en,.pdf,27a2986e7f190a83f704e9915598d4b4ddab1d7a0b7f37771fe4b7250baf5006,30018,english_source
+data/raw/products/PRD-ALP-CLI_2-2.txt,PRD-ALP-CLI,Alpha command-line maintenance reference,2.2,products,Internal,active,en,.txt,8cf6bcd5aad5820eef92760e3e9f686ff729285e45ed05b8aa8a76955bcdefe8,661,english_source
+data/raw/products/PRD-REL-ENG_2026-08.pdf,PRD-REL-ENG,International release bulletin,2026-08,products,Internal,active,en,.pdf,14dc9100389818bf2d9d1d6f02ae1622cd17358d43a73f6b2862d9d91321205b,29380,english_source
+data/raw/products/PRD-PACK-ENG_1-2.pdf,PRD-PACK-ENG,Packaging and transport specification,1.2,products,Internal,active,en,.pdf,95f07f34bc3fc7e0d9d546ad7c73192bea7d0ce9455afca7699a7fc7897cd845,29420,english_source
+data/raw/support/SUP-SLA-008_2026-1.pdf,SUP-SLA-008,Engagements de service Support,2026.1,support,Internal,active,fr,.pdf,c86661f6f5e5347ca8ebb77aa64aa4d7fe40f0cd75b06cad6f0ef09f6ed35774,30465,
+data/raw/support/SUP-ESC-005_2026-2.pdf,SUP-ESC-005,Matrice d'escalade Support,2026.2,support,Internal,active,fr,.pdf,acef0eebac6f28b879d2e426717f4609c37b198363759718a6c0331751f734c9,29714,
+data/raw/support/SUP-RMA-009_1-6.pdf,SUP-RMA-009,Procédure de retour matériel RMA,1.6,support,Internal,active,fr,.pdf,12d435da7d0883d1378f7a772617d5bfb17f570b58b03161866f67fe7e7a9f17,29742,
+data/raw/support/SUP-HO-006_1-0.docx,SUP-HO-006,Passage de relais entre équipes,1.0,support,Internal,active,fr,.docx,e6e0b7811122c2070b73fb7e875ccc070cc485a414912570d962ca0df6eb1f8e,37769,
+data/raw/support/SUP-FAQ-001_3-0.md,SUP-FAQ-001,FAQ Support - produits NovaTech,3.0,support,Internal,active,fr,.md,3bee39fbe752e766d5800c5f0b15ee5eacdb244ec6a0a5d482e12b22d195093e,853,
+data/raw/support/SUP-RUN-ALP-002_2-1.docx,SUP-RUN-ALP-002,Runbook Alpha - redémarrages intermittents,2.1,support,Internal,active,fr,.docx,b25621f8d56f70ee43ee1e6f82e1aaed3ac02b05a8534a03f82100a2f33d08f1,37785,
+data/raw/support/SUP-RUN-ALP-003_1-5.pdf,SUP-RUN-ALP-003,Runbook Alpha - perte de télémétrie,1.5,support,Internal,active,fr,.pdf,fd6e6a21b9a29c45812bcb0a1b12ea57bf71b44e422e96f7e8c64ca3119c451b,29777,
+data/raw/support/SUP-RUN-BET-004_1-8.pdf,SUP-RUN-BET-004,Runbook Beta - désynchronisation,1.8,support,Internal,active,fr,.pdf,8f991140b926458546f5614087f46c3296840033396c2f5de93593924be6b354,30423,
+data/raw/support/SUP-PM-0184_1-0.pdf,SUP-PM-0184,Post-mortem INC-2026-0184,1.0,support,Internal,active,fr,.pdf,0ef743b8ff777c70c582cef0fb88f8f44c7502cea5d62452901d82b8758801b7,29738,incident_exact_id
+data/raw/support/SUP-PM-0217_1-0.pdf,SUP-PM-0217,Post-mortem INC-2026-0217,1.0,support,Internal,active,fr,.pdf,b4455c4b61409c29fbb444cdf826497878cc1d95509a9b2722a572a86d4e0878,29714,incident_exact_id
+data/raw/support/SUP-PM-0251_1-0.docx,SUP-PM-0251,Post-mortem INC-2026-0251,1.0,support,Internal,active,fr,.docx,3d758ba39dc0fee5f2677a1e1f6e96cd8add90cbb344cffb54f8e3ac664edbfc,37760,incident_exact_id
+data/raw/support/KB-1001_1-2.md,KB-1001,Base de connaissances - Alpha E17,1.2,support,Internal,active,fr,.md,1b85bcb77e4c637825fa141ec8adb11851df0855c3c9b4497885613992b1d92f,867,
+data/raw/support/KB-1002_1-0.md,KB-1002,Base de connaissances - Beta B09,1.0,support,Internal,active,fr,.md,2104ff99d3a36741fa4d135d70a06a13987925b07d69888c4c4ea79bc5094e0e,826,
+data/raw/support/KB-1003_1-3.md,KB-1003,Base de connaissances - Gamma G31,1.3,support,Internal,active,fr,.md,6886f1a3c6c9d4ac663fe1bf95884ad5d6a6bacfdebdce1092948ea6a4a82113,836,
+data/raw/support/KB-1004_1-1.md,KB-1004,Base de connaissances - collecte de logs,1.1,support,Internal,active,fr,.md,9614707910e2814770a90c0cd6796e2e92fa98ad559af0ac80dfef13da6a3408,847,
+data/raw/support/KB-1005_2-0.pdf,KB-1005,Guide de diagnostic à distance,2.0,support,Internal,active,fr,.pdf,88ae2172fa786dc0fcff0bb37bafa29d83ea1d6ad33aadd0ac8a385082546559,29742,
+data/raw/support/CASE-ACME-001_1-0.txt,CASE-ACME-001,Compte rendu client ACME - juillet 2026,1.0,support,Internal,active,fr,.txt,3970e99e0f3590993ed548696d187b28149bfe7a96fcdcb3b92b981bec66f5c9,856,
+data/raw/support/CASE-ORBIT-002_1-0.txt,CASE-ORBIT-002,Compte rendu client Orbit Systems,1.0,support,Internal,active,fr,.txt,fd7c2125c98ed6e9a14464a32299922dadb84e14f327dedd37f6e8eff494c86e,838,
+data/raw/support/SUP-TICKET-007_2-4.pdf,SUP-TICKET-007,Règles de rédaction des tickets,2.4,support,Internal,active,fr,.pdf,e89220b892fca83723fc1e8df679083af19731610a9a2e9bf575eac36efd08ad,29776,
+data/raw/support/SUP-ONCALL-010_2-0.pdf,SUP-ONCALL-010,Organisation de l'astreinte,2.0,support,Internal,active,fr,.pdf,bf76fb58e08bb4f0e039b8ce31ffd4df24998819c2660df1d8fa5a78fd569399,29720,
+data/raw/support/SUP-COM-011_1-3.docx,SUP-COM-011,Communication lors d'un incident majeur,1.3,support,Internal,active,fr,.docx,767a828fe197ca0130a7cb1be08b7d24f011e26f217ded78b0b9de20a0812061,37786,
+data/raw/support/SUP-CLOSE-012_1-2.pdf,SUP-CLOSE-012,Critères de clôture d'un ticket,1.2,support,Internal,active,fr,.pdf,e79675013f0a0d122f0b151a73fc7617295ef04ffbeb7c962d464e0051359980,30448,
+data/raw/support/SUP-GLOB-013_1-0.md,SUP-GLOB-013,Global support handover template,1.0,support,Internal,active,en,.md,0c8b3a78b5250bd923d37a4f53284e65736430a7570f49c19eea97e2d9ec6bf7,629,
+data/raw/support/SUP-VEND-014_2-0.pdf,SUP-VEND-014,Vendor troubleshooting note - network controller,2.0,support,Internal,active,en,.pdf,ced84a6057784edcd6d75cbb118fb435deac56b3ac663541a85a4c5151e52155,29374,
+data/raw/hr/HR-POL-001_1-0_OBSOLETE.pdf,HR-POL-001,Politique de télétravail,1.0,hr,Internal,obsolete,fr,.pdf,096cc5c83f66e8feeec828b61ab4eb6240d8ba602ca597d0814bdb2e9a94bbff,30585,obsolete_version
+data/raw/hr/HR-POL-001_2-0_ACTIVE.docx,HR-POL-001,Politique de télétravail,2.0,hr,Internal,active,fr,.docx,f0094fb785b222fe3709536c8df0c9e97ef79bf4ec22b979f8c6e45f77a60a46,37768,
+data/raw/hr/HR-POL-002_3-2_ACTIVE.md,HR-POL-002,Congés payés et RTT,3.2,hr,Internal,active,fr,.md,a719389a178b0e121da602b9914848ac4d7611623f52263c90a23e57a6ac6586,851,
+data/raw/hr/HR-POL-003_2-1_ACTIVE.pdf,HR-POL-003,Frais professionnels,2.1,hr,Internal,active,fr,.pdf,11d8c316f44234072ccbc5d73b87e41e6b8100cd34973b4b3c6d8ce54e08635c,29957,
+data/raw/hr/HR-POL-004_2-6_ACTIVE.pdf,HR-POL-004,Déplacements professionnels,2.6,hr,Internal,active,fr,.pdf,d9748ba0750a8740bf60ef9548a64b43fb337b5068a25323a672e2bb4a215f91,29978,
+data/raw/hr/HR-POL-005_1-9_ACTIVE.docx,HR-POL-005,Parcours d'intégration,1.9,hr,Internal,active,fr,.docx,01d9b56ed61ac46118eb721bc294b1cd537b466d4fa1d2bb9cb71e17c9ef4d16,37769,
+data/raw/hr/HR-POL-006_1-3_ACTIVE.md,HR-POL-006,Charte de droit à la déconnexion,1.3,hr,Internal,active,fr,.md,79eeb329b47f621672c4c1f2b079de99d3bb5bbf96345ebf578841dc8c51791c,880,
+data/raw/hr/HR-POL-007_4-0_ACTIVE.pdf,HR-POL-007,Formation professionnelle,4.0,hr,Internal,active,fr,.pdf,3c647028fc752c87dfca3fd3974cf60ca675ab38bbef77ce345d8bbc48a43267,29976,
+data/raw/hr/HR-POL-008_3-1_ACTIVE.pdf,HR-POL-008,Mobilité interne,3.1,hr,Internal,active,fr,.pdf,6d8831d60b8a6944128683d700752841d8f1ed884941ed04fc1512d0402ac851,29968,
+data/raw/hr/HR-POL-009_2-0_ACTIVE.docx,HR-POL-009,Prévention des risques psychosociaux,2.0,hr,Internal,active,fr,.docx,b5f00a0bbacfd34a60505076df92731badefcc92ea17792fe1006b0b4d846ff7,37766,
+data/raw/hr/HR-POL-010_1-2_ACTIVE.md,HR-POL-010,Politique de recrutement,1.2,hr,Internal,active,fr,.md,1769d6a2f51b14e2bada77727899da1aea6b46fddc940f1ea85bce99ed1d114e,860,
+data/raw/hr/HR-POL-011_1-0_ACTIVE.pdf,HR-POL-011,Politique de rémunération individuelle,1.0,hr,HR_CONFIDENTIAL,active,fr,.pdf,5a64d98a0dba9a1e89502100d1e5a234b307fd3c8f488f2677f706cfbe188135,29997,restricted_acl
+data/raw/hr/HR-POL-012_1-0_DRAFT.pdf,HR-POL-012,Grille salariale 2027 - prévision,1.0,hr,HR_CONFIDENTIAL,draft,fr,.pdf,19cb1a0de36aa8c67da87b78e3c99dcb38971b0fdbdf7d94c02fd8b67a43b51f,30873,restricted_acl
+data/raw/hr/HR-POL-013_2-3_ACTIVE.docx,HR-POL-013,Égalité professionnelle,2.3,hr,Internal,active,fr,.docx,e518e23b55b3ba5065cf8f1af25bf051a9c411dfcf7a69c4c767dfa99b0181fb,37764,
+data/raw/hr/HR-POL-014_2-1_ACTIVE.md,HR-POL-014,Congé parental et événements familiaux,2.1,hr,Internal,active,fr,.md,63c3ef1f8e415f8688a5d89436917deb80dd9fa6637c9533970119ee48ec457e,871,
+data/raw/hr/HR-POL-015_5-0_ACTIVE.pdf,HR-POL-015,Règlement intérieur - extrait numérique,5.0,hr,Internal,active,fr,.pdf,7f61b705c6acac2473e8ff7e849418bf8a9885500de8a4829e6feced354e13ea,29992,
+data/raw/hr/HR-POL-016_1-4_ACTIVE.pdf,HR-POL-016,Politique de confidentialité RH,1.4,hr,HR_CONFIDENTIAL,active,fr,.pdf,c95c131c27286b4c28075c0920a8545e17ac17b679066b1f8a9d0a88f4865593,29981,restricted_acl
+data/raw/hr/HR-POL-017_2-2_ACTIVE.docx,HR-POL-017,Procédure d'onboarding IT,2.2,hr,Internal,active,fr,.docx,fa0a0b9fd56ef100f9945cb5ba5f5713e0a454cd26530c186fa6a8577f7fcad7,37783,
+data/raw/hr/HR-POL-018_1-8_ACTIVE.md,HR-POL-018,Guide des avantages sociaux,1.8,hr,Internal,active,fr,.md,96f1d13cdfb5309bb1e4c1beebc7fb0898a82066e896a3a1ba5d0b93bf31ff49,845,
+data/raw/hr/HR-POL-019_3-0_ACTIVE.pdf,HR-POL-019,Charte éthique,3.0,hr,Internal,active,fr,.pdf,1cb5b05c6aa82d1498eea6c3e4d3102e6dbc79b26cd8855742429c8481f6ba4f,29977,

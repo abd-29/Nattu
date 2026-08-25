@@ -1,0 +1,91 @@
+action_id,type,owner_department,status,due_date,related_incident
+ACT-0001,Action corrective,Engineering,close,2026-09-02,INC-2026-0004
+ACT-0002,Action corrective,Production,close,2026-09-03,INC-2026-0007
+ACT-0003,CAPA,Quality,close,2026-09-04,INC-2026-0010
+ACT-0004,Action corrective,Engineering,ouverte,2026-09-05,INC-2026-0013
+ACT-0005,Action corrective,Production,close,2026-09-06,INC-2026-0016
+ACT-0006,CAPA,Quality,close,2026-09-07,INC-2026-0019
+ACT-0007,Action corrective,Engineering,close,2026-09-08,INC-2026-0022
+ACT-0008,Action corrective,Production,ouverte,2026-09-09,INC-2026-0025
+ACT-0009,CAPA,Quality,close,2026-09-10,INC-2026-0028
+ACT-0010,Action corrective,Engineering,close,2026-09-11,INC-2026-0031
+ACT-0011,Action corrective,Production,close,2026-09-12,INC-2026-0034
+ACT-0012,CAPA,Quality,ouverte,2026-09-13,INC-2026-0037
+ACT-0013,Action corrective,Engineering,close,2026-09-14,INC-2026-0040
+ACT-0014,Action corrective,Production,close,2026-09-15,INC-2026-0043
+ACT-0015,CAPA,Quality,close,2026-09-16,INC-2026-0046
+ACT-0016,Action corrective,Engineering,ouverte,2026-09-17,INC-2026-0049
+ACT-0017,Action corrective,Production,close,2026-09-18,INC-2026-0052
+ACT-0018,CAPA,Quality,close,2026-09-19,INC-2026-0055
+ACT-0019,Action corrective,Engineering,close,2026-09-20,INC-2026-0058
+ACT-0020,Action corrective,Production,ouverte,2026-09-21,INC-2026-0061
+ACT-0021,CAPA,Quality,close,2026-09-22,INC-2026-0064
+ACT-0022,Action corrective,Engineering,close,2026-09-23,INC-2026-0067
+ACT-0023,Action corrective,Production,close,2026-09-24,INC-2026-0070
+ACT-0024,CAPA,Quality,ouverte,2026-09-25,INC-2026-0073
+ACT-0025,Action corrective,Engineering,close,2026-09-26,INC-2026-0076
+ACT-0026,Action corrective,Production,close,2026-09-27,INC-2026-0079
+ACT-0027,CAPA,Quality,close,2026-09-28,INC-2026-0082
+ACT-0028,Action corrective,Engineering,ouverte,2026-09-29,INC-2026-0085
+ACT-0029,Action corrective,Production,close,2026-09-30,INC-2026-0088
+ACT-0030,CAPA,Quality,close,2026-10-01,INC-2026-0091
+ACT-0031,Action corrective,Engineering,close,2026-10-02,INC-2026-0094
+ACT-0032,Action corrective,Production,ouverte,2026-10-03,INC-2026-0097
+ACT-0033,CAPA,Quality,close,2026-10-04,INC-2026-0100
+ACT-0034,Action corrective,Engineering,close,2026-10-05,INC-2026-0103
+ACT-0035,Action corrective,Production,close,2026-10-06,INC-2026-0106
+ACT-0036,CAPA,Quality,ouverte,2026-10-07,INC-2026-0109
+ACT-0037,Action corrective,Engineering,close,2026-10-08,INC-2026-0112
+ACT-0038,Action corrective,Production,close,2026-10-09,INC-2026-0115
+ACT-0039,CAPA,Quality,close,2026-10-10,INC-2026-0118
+ACT-0040,Action corrective,Engineering,ouverte,2026-10-11,INC-2026-0121
+ACT-0041,Action corrective,Production,close,2026-10-12,INC-2026-0124
+ACT-0042,CAPA,Quality,close,2026-10-13,INC-2026-0127
+ACT-0043,Action corrective,Engineering,close,2026-10-14,INC-2026-0130
+ACT-0044,Action corrective,Production,ouverte,2026-10-15,INC-2026-0133
+ACT-0045,CAPA,Quality,close,2026-10-16,INC-2026-0136
+ACT-0046,Action corrective,Engineering,close,2026-10-17,INC-2026-0139
+ACT-0047,Action corrective,Production,close,2026-10-18,INC-2026-0142
+ACT-0048,CAPA,Quality,ouverte,2026-10-19,INC-2026-0145
+ACT-0049,Action corrective,Engineering,close,2026-10-20,INC-2026-0148
+ACT-0050,Action corrective,Production,close,2026-10-21,INC-2026-0151
+ACT-0051,CAPA,Quality,close,2026-10-22,INC-2026-0154
+ACT-0052,Action corrective,Engineering,ouverte,2026-10-23,INC-2026-0157
+ACT-0053,Action corrective,Production,close,2026-10-24,INC-2026-0160
+ACT-0054,CAPA,Quality,close,2026-10-25,INC-2026-0163
+ACT-0055,Action corrective,Engineering,close,2026-10-26,INC-2026-0166
+ACT-0056,Action corrective,Production,ouverte,2026-10-27,INC-2026-0169
+ACT-0057,CAPA,Quality,close,2026-10-28,INC-2026-0172
+ACT-0058,Action corrective,Engineering,close,2026-10-29,INC-2026-0175
+ACT-0059,Action corrective,Production,close,2026-10-30,INC-2026-0178
+ACT-0060,CAPA,Quality,ouverte,2026-10-31,INC-2026-0181
+ACT-0061,Action corrective,Engineering,close,2026-11-01,INC-2026-0184
+ACT-0062,Action corrective,Production,close,2026-11-02,INC-2026-0187
+ACT-0063,CAPA,Quality,close,2026-11-03,INC-2026-0190
+ACT-0064,Action corrective,Engineering,ouverte,2026-11-04,INC-2026-0193
+ACT-0065,Action corrective,Production,close,2026-11-05,INC-2026-0196
+ACT-0066,CAPA,Quality,close,2026-11-06,INC-2026-0199
+ACT-0067,Action corrective,Engineering,close,2026-11-07,INC-2026-0202
+ACT-0068,Action corrective,Production,ouverte,2026-11-08,INC-2026-0205
+ACT-0069,CAPA,Quality,close,2026-11-09,INC-2026-0208
+ACT-0070,Action corrective,Engineering,close,2026-11-10,INC-2026-0211
+ACT-0071,Action corrective,Production,close,2026-11-11,INC-2026-0214
+ACT-0072,CAPA,Quality,ouverte,2026-11-12,INC-2026-0217
+ACT-0073,Action corrective,Engineering,close,2026-11-13,INC-2026-0220
+ACT-0074,Action corrective,Production,close,2026-11-14,INC-2026-0223
+ACT-0075,CAPA,Quality,close,2026-11-15,INC-2026-0226
+ACT-0076,Action corrective,Engineering,ouverte,2026-11-16,INC-2026-0229
+ACT-0077,Action corrective,Production,close,2026-11-17,INC-2026-0232
+ACT-0078,CAPA,Quality,close,2026-11-18,INC-2026-0235
+ACT-0079,Action corrective,Engineering,close,2026-11-19,INC-2026-0238
+ACT-0080,Action corrective,Production,ouverte,2026-11-20,INC-2026-0241
+ACT-0081,CAPA,Quality,close,2026-11-21,INC-2026-0244
+ACT-0082,Action corrective,Engineering,close,2026-11-22,INC-2026-0247
+ACT-0083,Action corrective,Production,close,2026-11-23,INC-2026-0250
+ACT-0084,CAPA,Quality,ouverte,2026-11-24,INC-2026-0253
+ACT-0085,Action corrective,Engineering,close,2026-11-25,INC-2026-0256
+ACT-0086,Action corrective,Production,close,2026-11-26,INC-2026-0259
+ACT-0087,CAPA,Quality,close,2026-11-27,INC-2026-0262
+ACT-0088,Action corrective,Engineering,ouverte,2026-11-28,INC-2026-0265
+ACT-0089,Action corrective,Production,close,2026-11-29,INC-2026-0268
+ACT-0090,CAPA,Quality,close,2026-11-30,INC-2026-0271

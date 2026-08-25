@@ -1,0 +1,10 @@
+site,product,stock_units,reorder_threshold,last_update
+Rennes,Alpha,53,40,2026-08-23
+Rennes,Beta,31,40,2026-08-23
+Rennes,Gamma,95,40,2026-08-23
+Lyon,Alpha,87,40,2026-08-23
+Lyon,Beta,82,40,2026-08-23
+Lyon,Gamma,60,40,2026-08-23
+Toulouse,Alpha,51,40,2026-08-23
+Toulouse,Beta,164,40,2026-08-23
+Toulouse,Gamma,47,40,2026-08-23

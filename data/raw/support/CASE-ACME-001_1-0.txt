@@ -1,0 +1,22 @@
+Compte rendu client ACME - juillet 2026
+=======================================
+
+Référence : CASE-ACME-001
+Version : 1.0
+Date d'application : 2026-05-08
+Département : Support
+Classification : Internal
+Statut : En vigueur
+Langue : fr
+
+1. Objectif
+Ce document est destiné aux équipes Support et Engineering. Toute action réalisée sur un équipement client doit être enregistrée dans le ticket correspondant avec l'heure, l'opérateur et le résultat.
+
+2. Règle principale
+Trois redémarrages Alpha ont été observés. Deux équipements utilisaient encore le firmware 4.1.
+
+3. Collecte d'informations
+Avant toute action irréversible, collecter les journaux disponibles, la version logicielle, l'heure du symptôme et le numéro de série.
+
+4. Escalade
+Les cas non résolus dans le délai cible sont escaladés selon la matrice Support en vigueur.
