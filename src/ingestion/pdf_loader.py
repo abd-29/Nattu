@@ -41,8 +41,6 @@ def extract_pdf_units(path: Path) -> list[dict]:
         if needs_ocr:
             text = extract_page_with_ocr(page)
 
-        print(f"Page {page_number} " f"| OCR required: {needs_ocr}")
-
         units.append(
             {
                 "unit": page_number,

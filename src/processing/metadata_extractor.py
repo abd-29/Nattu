@@ -1,9 +1,13 @@
 import re
+from datetime import datetime
 
+from config import DATA_DIR, FRENCH_MONTHS
 
-def clean_line(
-    line: str,
-) -> str:
+from src.ingestion.document_loader import load_document
+from langdetect import detect
+from langdetect.lang_detect_exception import LangDetectException
+
+def clean_line(line: str) -> str:
     """
     Remove simple formatting characters from a line.
     """
@@ -105,11 +109,126 @@ def normalize_language(
     return value.lower()
 
 
+def extract_header_identity(
+    line: str,
+) -> tuple[str | None, str]:
+    """
+    Extract document ID and title from the first line.
+    """
+
+    cleaned_line = clean_line(
+        line
+    )
+
+    pattern = re.compile(
+        r"^([A-Z0-9]+(?:-[A-Z0-9]+)+)"
+        r"\s*[—–-]\s*"
+        r"(.+)$"
+    )
+
+    match = pattern.match(
+        cleaned_line
+    )
+
+    if not match:
+        return None, cleaned_line
+
+    document_id = match.group(1)
+    title = match.group(2).strip()
+
+    return document_id, title
+
+
+def normalize_date(value: str | None) -> str | None:
+    """
+    Normalize document dates to YYYY-MM-DD.
+    """
+
+    if value is None:
+        return None
+
+    value = value.strip()
+
+    try:
+        return datetime.strptime(
+            value,
+            "%Y-%m-%d",
+        ).date().isoformat()
+
+    except ValueError:
+        pass
+
+    parts = value.lower().split()
+
+    if len(parts) == 3:
+
+        day, month, year = parts
+
+        month_number = FRENCH_MONTHS.get(
+            month
+        )
+
+        if month_number:
+
+            return (
+                f"{year}-"
+                f"{month_number}-"
+                f"{int(day):02d}"
+            )
+
+    return value
+
+
+from pathlib import Path
+
+def detect_language(
+    text: str,
+) -> str | None:
+    """
+    Detect document language from text.
+    """
+
+    if not text.strip():
+        return None
+
+    try:
+        return detect(text)
+
+    except LangDetectException:
+        return None
+
+
+def infer_status_from_text(
+    text: str,
+) -> str | None:
+    """
+    Infer document status from explicit textual evidence.
+    """
+
+    normalized_text = text.lower()
+
+    archived_markers = [
+        "archivé",
+        "archivée",
+        "archivee",
+        "ne doit plus être utilisé",
+        "ne doit plus etre utilise",
+    ]
+
+    for marker in archived_markers:
+
+        if marker in normalized_text:
+            return "archived"
+
+    return None
+
 def extract_metadata(
     units: list[dict],
+    path: Path | None = None,
+    raw_data_dir: Path | None = None,
 ) -> dict:
     """
-    Extract metadata from loaded document units.
+    Extract metadata from document content and file path.
     """
 
     if not units:
@@ -126,14 +245,19 @@ def extract_metadata(
     if not lines:
         return {}
 
-    title = clean_line(
-        lines[0]
+    header_document_id, title = (
+        extract_header_identity(
+            lines[0]
+        )
     )
 
     document_id = extract_field(
         lines,
         ["Référence"],
     )
+
+    if document_id is None:
+        document_id = header_document_id
 
     version = extract_field(
         lines,
@@ -163,16 +287,48 @@ def extract_metadata(
         ["Statut"],
     )
 
+    if status is None:
+        status = infer_status_from_text(
+            text
+        )
+
     language = extract_field(
         lines,
         ["Langue"],
     )
 
+    if language is None:
+        language = detect_language(
+            text
+        )
+
+    source = None
+    filename = None
+    extension = None
+
+    if path is not None:
+
+        filename = path.name
+        extension = path.suffix.lower()
+
+        if raw_data_dir is not None:
+
+            relative_path = path.relative_to(
+                raw_data_dir
+            )
+
+            source = relative_path.as_posix()
+
+            if department is None:
+
+                department = (
+                    relative_path.parts[0]
+                )
+
     return {
         "document_id": document_id,
         "title": title,
         "version": version,
-        "date": document_date,
         "department": normalize_department(
             department
         ),
@@ -187,16 +343,15 @@ def extract_metadata(
         "language": normalize_language(
             language
         ),
+        "date": normalize_date(
+            document_date
+        ),
+        "source": source,
+        "filename": filename,
+        "extension": extension,
     }
 
-
 if __name__ == "__main__":
-
-    from config import DATA_DIR
-
-    from src.ingestion.document_loader import (
-        load_document,
-    )
 
     test_documents = [
         DATA_DIR
@@ -223,6 +378,11 @@ if __name__ == "__main__":
         / "raw"
         / "quality"
         / "QUA-LEGACY-016_scan_2019.pdf",
+
+        DATA_DIR
+        / "raw"
+        / "quality"
+        / "QUA-INC-001_v3.pdf",
     ]
 
     for path in test_documents:
@@ -232,7 +392,9 @@ if __name__ == "__main__":
         )
 
         metadata = extract_metadata(
-            units
+            units=units,
+            path=path,
+            raw_data_dir=DATA_DIR / "raw",
         )
 
         print(

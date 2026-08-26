@@ -44,7 +44,9 @@ def audit_metadata():
             )
 
             metadata = extract_metadata(
-                units
+                units=units,
+                path=path,
+                raw_data_dir=raw_data_dir,
             )
 
             missing_fields = [
@@ -54,12 +56,10 @@ def audit_metadata():
             ]
 
             if missing_fields:
-
                 incomplete.append(
                     {
                         "path": path,
                         "missing_fields": missing_fields,
-                        "metadata": metadata,
                     }
                 )
 
@@ -67,7 +67,6 @@ def audit_metadata():
                 complete += 1
 
         except Exception as error:
-
             failed.append(
                 {
                     "path": path,
@@ -96,7 +95,6 @@ def audit_metadata():
         print("\nINCOMPLETE METADATA")
 
         for item in incomplete:
-
             print(
                 item["path"].relative_to(
                     raw_data_dir
@@ -113,7 +111,6 @@ def audit_metadata():
         print("\nFAILED")
 
         for item in failed:
-
             print(
                 item["path"].relative_to(
                     raw_data_dir
@@ -126,22 +123,4 @@ def audit_metadata():
 
 
 if __name__ == "__main__":
-    #audit_metadata()
-    from config import DATA_DIR
-
-    from src.ingestion.document_loader import (
-        load_document,
-    )
-
-    path = (
-            DATA_DIR
-            / "raw"
-            / "quality"
-            / "QUA-INC-001_v3.pdf"
-    )
-
-    units = load_document(path)
-
-    print(
-        units[0]["text"][:1000]
-    )
+    audit_metadata()
