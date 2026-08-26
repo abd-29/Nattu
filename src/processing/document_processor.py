@@ -1,69 +1,140 @@
-def enrich_chunks(chunks: list[dict], metadata: dict) -> list[dict]:
+import hashlib
+from pathlib import Path
+
+from src.chunking.text_chunker import (
+    chunk_units,
+)
+from src.chunking.text_cleaner import clean_units
+from src.ingestion.document_loader import (
+    load_document,
+)
+from src.processing.metadata_extractor import (
+    extract_metadata,
+)
+
+def build_chunk_id(
+    metadata: dict,
+    chunk_number: int,
+) -> str:
     """
-    Add document metadata to chunks.
+    Build a deterministic and unique chunk identifier.
+    """
+
+    source = metadata["source"]
+
+    source_hash = hashlib.sha256(
+        source.encode("utf-8")
+    ).hexdigest()[:8]
+
+    return (
+        f"{metadata['document_id']}"
+        f"_v{metadata['version']}"
+        f"_{source_hash}"
+        f"_chunk_{chunk_number}"
+    )
+
+
+def enrich_chunks(
+    chunks: list[dict],
+    metadata: dict,
+) -> list[dict]:
+    """
+    Add document metadata to each chunk.
     """
 
     enriched_chunks = []
 
     for chunk in chunks:
-        chunk_id = (
-            f"{metadata['document_id']}"
-            f"_v{metadata['version']}"
-            f"_chunk_{chunk['chunk']}"
+        chunk_id = build_chunk_id(
+            metadata=metadata,
+            chunk_number=chunk["chunk"],
         )
 
-        enriched_chunk = {
-            "chunk_id": chunk_id,
-            **metadata,
-            **chunk,
-        }
-
         enriched_chunks.append(
-            enriched_chunk
+            {
+                "chunk_id": chunk_id,
+                **metadata,
+                **chunk,
+            }
         )
 
     return enriched_chunks
 
 
+def process_document(
+    path: Path,
+    raw_data_dir: Path,
+) -> list[dict]:
+    """
+    Process one document from loading to enriched chunks.
+    """
 
-if __name__ == "__main__":
-
-    from pprint import pprint
-
-    from config import DATA_DIR
-    from src.ingestion.pdf_loader import extract_pdf_pages
-    from src.chunking.text_chunker import chunk_pages
-
-    pdf_path = (
-        DATA_DIR
-        / "raw"
-        / "quality"
-        / "QUA-INC-001_v3.pdf"
+    units = load_document(
+        path
     )
 
-    metadata = {
-        "document_id": "QUA-INC-001",
-        "title": "Gestion des incidents produits",
-        "version": "3.0",
-        "department": "quality",
-        "classification": "internal",
-        "status": "active",
-        "source": "QUA-INC-001_v3.pdf",
-    }
-
-    pages = extract_pdf_pages(pdf_path)
-
-    chunks = chunk_pages(
-        pages=pages,
-        chunk_size=500,
-        overlap_paragraphs=1,
+    units = clean_units(
+        units
     )
 
-    chunks = enrich_chunks(
+    metadata = extract_metadata(
+        units=units,
+        path=path,
+        raw_data_dir=raw_data_dir,
+    )
+
+    chunks = chunk_units(
+        units=units,
+    )
+
+    return enrich_chunks(
         chunks=chunks,
         metadata=metadata,
     )
 
-    pprint(chunks[0])
 
-    
+if __name__ == "__main__":
+
+    from config import DATA_DIR
+
+    raw_data_dir = (
+        DATA_DIR
+        / "raw"
+    )
+
+    path = (
+        raw_data_dir
+        / "quality"
+        / "QUA-INC-001_v3_2026.pdf"
+    )
+
+    chunks = process_document(
+        path=path,
+        raw_data_dir=raw_data_dir,
+    )
+
+    for chunk in chunks:
+
+        print("=" * 70)
+
+        print(
+            chunk["chunk_id"]
+        )
+
+        print(
+            chunk["document_id"],
+            chunk["version"],
+            chunk["department"],
+            chunk["status"],
+            chunk["language"],
+        )
+
+        print(
+            f"pages: "
+            f"{chunk['start_page']}-"
+            f"{chunk['end_page']}"
+        )
+
+        print(
+            chunk["text"][:150]
+        )
