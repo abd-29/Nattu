@@ -1,9 +1,7 @@
 import re
 
 
-def clean_text(
-    text: str,
-) -> str:
+def clean_text(text: str) -> str:
     """
     Remove common extraction noise from text.
     """
@@ -11,19 +9,13 @@ def clean_text(
     cleaned_lines = []
 
     for line in text.splitlines():
-
-        normalized_line = " ".join(
-            line.split()
-        )
+        normalized_line = " ".join(line.split())
 
         if not normalized_line:
             cleaned_lines.append("")
             continue
 
-        if re.fullmatch(
-            r"\d+",
-            normalized_line,
-        ):
+        if re.fullmatch(r"\d+", normalized_line):
             continue
 
         if normalized_line.startswith(
@@ -31,20 +23,14 @@ def clean_text(
         ):
             continue
 
-        cleaned_lines.append(
-            line.strip()
-        )
+        cleaned_lines.append(line.strip())
 
-    return "\n".join(
-        cleaned_lines
-    ).strip()
+    return "\n".join(cleaned_lines).strip()
 
 
 
 
-def clean_units(
-    units: list[dict],
-) -> list[dict]:
+def clean_units(units: list[dict]) -> list[dict]:
     """
     Clean text while preserving unit metadata.
     """
@@ -52,13 +38,10 @@ def clean_units(
     cleaned_units = []
 
     for unit in units:
-
         cleaned_units.append(
             {
                 **unit,
-                "text": clean_text(
-                    unit["text"]
-                ),
+                "text": clean_text(unit["text"]),
             }
         )
 

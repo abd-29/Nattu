@@ -3,11 +3,7 @@ from src.chunking.text_cleaner import clean_units
 from src.ingestion.document_loader import load_document
 
 
-def chunk_units(
-    units: list[dict],
-    chunk_size: int = 500,
-    overlap_paragraphs: int = 1,
-) -> list[dict]:
+def chunk_units(units: list[dict], chunk_size: int = 500, overlap_paragraphs: int = 1) -> list[dict]:
     """
     Split document units into continuous chunks
     with paragraph overlap.
@@ -50,23 +46,12 @@ def chunk_units(
         while end < len(paragraphs):
 
             text = paragraphs[end]["text"]
+            new_length = current_length + len(text) + 2
 
-            new_length = (
-                current_length
-                + len(text)
-                + 2
-            )
-
-            if (
-                current
-                and new_length > chunk_size
-            ):
+            if (current and new_length > chunk_size):
                 break
 
-            current.append(
-                paragraphs[end]
-            )
-
+            current.append(paragraphs[end])
             current_length = new_length
             end += 1
 
@@ -87,31 +72,11 @@ def chunk_units(
         chunks.append(
             {
                 "chunk": len(chunks) + 1,
-
-                "start_unit": (
-                    current[0]["unit"]
-                ),
-
-                "end_unit": (
-                    current[-1]["unit"]
-                ),
-
-                "start_page": (
-                    pages[0]
-                    if pages
-                    else None
-                ),
-
-                "end_page": (
-                    pages[-1]
-                    if pages
-                    else None
-                ),
-
-                "text": "\n\n".join(
-                    item["text"]
-                    for item in current
-                ),
+                "start_unit": current[0]["unit"],
+                "end_unit": current[-1]["unit"],
+                "start_page": pages[0] if pages else None,
+                "end_page": pages[-1] if pages else None,
+                "text": "\n\n".join(item["text"] for item in current),
             }
         )
 
@@ -120,15 +85,8 @@ def chunk_units(
         if end == len(paragraphs):
             break
 
-        next_start = (
-            end
-            - overlap_paragraphs
-        )
-
-        start = max(
-            next_start,
-            start + 1,
-        )
+        next_start = end - overlap_paragraphs
+        start = max(next_start, start + 1)
 
     return chunks
 
@@ -142,21 +100,12 @@ if __name__ == "__main__":
             / "QUA-INC-001_v3_2026.pdf"
     )
 
-    units = load_document(
-        path
-    )
-
-    units = clean_units(
-        units
-    )
-
-    chunks = chunk_units(
-        units
-    )
+    units = load_document(path)
+    units = clean_units(units)
+    chunks = chunk_units(units)
 
     for chunk in chunks:
         print("=" * 70)
-
         print(
             f"Chunk {chunk['chunk']} "
             f"| pages "
@@ -165,9 +114,5 @@ if __name__ == "__main__":
             f"| chars "
             f"{len(chunk['text'])}"
         )
-
         print()
-
-        print(
-            chunk["text"]
-        )
+        print(chunk["text"])

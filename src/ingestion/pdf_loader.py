@@ -1,10 +1,9 @@
 from pathlib import Path
 
 import numpy as np
+import pymupdf
 
 from config import DATA_DIR
-
-import pymupdf
 from rapidocr import RapidOCR
 
 

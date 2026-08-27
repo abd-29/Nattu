@@ -1,49 +1,24 @@
 from pathlib import Path
 
 
-def compare_manifests(
-    previous: dict,
-    current: dict,
-) -> dict:
+def compare_manifests(previous: dict, current: dict) -> dict:
     """
     Compare two document manifests.
     """
 
-    previous_paths = set(
-        previous.keys()
-    )
-
-    current_paths = set(
-        current.keys()
-    )
-
-    added = (
-        current_paths
-        - previous_paths
-    )
-
-    deleted = (
-        previous_paths
-        - current_paths
-    )
-
-    common = (
-        previous_paths
-        & current_paths
-    )
+    previous_paths = set(previous.keys())
+    current_paths = set(current.keys())
+    added = current_paths - previous_paths
+    deleted = previous_paths - current_paths
+    common = previous_paths & current_paths
 
     modified = set()
     unchanged = set()
 
     for path in common:
 
-        previous_hash = (
-            previous[path]["sha256"]
-        )
-
-        current_hash = (
-            current[path]["sha256"]
-        )
+        previous_hash = previous[path]["sha256"]
+        current_hash = current[path]["sha256"]
 
         if previous_hash != current_hash:
             modified.add(path)
@@ -68,24 +43,11 @@ if __name__ == "__main__":
         load_manifest,
     )
 
-    raw_data_dir = (
-        DATA_DIR
-        / "raw"
-    )
+    raw_data_dir = DATA_DIR / "raw"
+    manifest_path = DATA_DIR / "processed" / "manifest.json"
+    previous_manifest = load_manifest(manifest_path)
 
-    manifest_path = (
-        DATA_DIR
-        / "processed"
-        / "manifest.json"
-    )
-
-    previous_manifest = load_manifest(
-        manifest_path
-    )
-
-    current_manifest = build_manifest(
-        raw_data_dir
-    )
+    current_manifest = build_manifest(raw_data_dir)
 
     changes = compare_manifests(
         previous=previous_manifest,

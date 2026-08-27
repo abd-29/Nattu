@@ -59,25 +59,11 @@ if __name__ == "__main__":
     raw_data_dir = DATA_DIR / "raw"
 
     test_documents = [
-        raw_data_dir
-        / "quality"
-        / "QUA-INC-001_v3_2026.pdf",
-
-        raw_data_dir
-        / "products"
-        / "PRD-ALP-INST_3-1.docx",
-
-        raw_data_dir
-        / "products"
-        / "PRD-ALP-MAINT_2-0.md",
-
-        raw_data_dir
-        / "support"
-        / "CASE-ACME-001_1-0.txt",
-
-        raw_data_dir
-        / "quality"
-        / "QUA-LEGACY-016_scan_2019.pdf",
+        raw_data_dir / "quality" / "QUA-INC-001_v3_2026.pdf",
+        raw_data_dir / "products" / "PRD-ALP-INST_3-1.docx",
+        raw_data_dir / "products" / "PRD-ALP-MAINT_2-0.md",
+        raw_data_dir / "support"  / "CASE-ACME-001_1-0.txt",
+        raw_data_dir / "quality" / "QUA-LEGACY-016_scan_2019.pdf",
     ]
 
     for path in test_documents:

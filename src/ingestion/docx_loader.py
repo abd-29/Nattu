@@ -17,8 +17,7 @@ def extract_table_text(table: Table) -> str:
             for cell in row.cells
         ]
 
-        rows.append(
-            " | ".join(cells)
+        rows.append(" | ".join(cells)
         )
 
     return "\n".join(rows)
