@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+
+    container_name: novatech-postgres
+
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: novatech
+      POSTGRES_USER: novatech
+      POSTGRES_PASSWORD: novatech
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - novatech_postgres_data:/var/lib/postgresql/data
+
+
+volumes:
+  novatech_postgres_data:
