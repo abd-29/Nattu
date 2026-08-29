@@ -1,6 +1,49 @@
 from config import DATA_DIR
-from src.chunking.text_cleaner import clean_units
 from src.ingestion.document_loader import load_document
+
+
+import re
+
+
+def clean_text(text: str) -> str:
+    """
+    Remove common extraction noise from text.
+    """
+
+    cleaned_lines = []
+
+    for line in text.splitlines():
+
+        normalized_line = " ".join(line.split())
+
+        if not normalized_line:
+            cleaned_lines.append("")
+            continue
+
+        if re.fullmatch(r"\d+", normalized_line):
+            continue
+
+        if normalized_line.startswith("NovaTech Industries - Document interne"):
+            continue
+
+        cleaned_lines.append(line.strip())
+
+    return "\n".join(cleaned_lines).strip()
+
+
+def clean_units(units: list[dict]) -> list[dict]:
+    """
+    Clean document units while preserving metadata.
+    """
+
+    return [
+        {
+            **unit,
+            "text": clean_text(unit["text"]),
+        }
+        for unit in units
+    ]
+
 
 
 def chunk_units(units: list[dict], chunk_size: int = 500, overlap_paragraphs: int = 1) -> list[dict]:

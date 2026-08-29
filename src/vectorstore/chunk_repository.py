@@ -1,13 +1,43 @@
 from src.vectorshore.database import get_connection
 
 from pgvector import Vector
+
+
+def delete_document_chunks_by_sources(sources: list[str]) -> int:
+    """
+    Delete chunks belonging to multiple source documents.
+    """
+
+    if not sources:
+        return 0
+
+    deleted_chunks = 0
+
+    with get_connection() as connection:
+        with connection.cursor() as cursor:
+            for source in sources:
+
+                cursor.execute(
+                    """
+                    DELETE FROM document_chunks
+                    WHERE source = %s;
+                    """,
+                    (source,),
+                )
+
+                deleted_chunks += (
+                    cursor.rowcount
+                )
+
+    return deleted_chunks
+
+
 def replace_document_chunks(source: str, chunks: list[dict]) -> None:
     """
     Replace all stored chunks for one source document.
     """
 
     with get_connection() as connection:
-
         with connection.cursor() as cursor:
 
             cursor.execute(
@@ -73,53 +103,19 @@ def replace_document_chunks(source: str, chunks: list[dict]) -> None:
                 )
 
 
-if __name__ == "__main__":
+def delete_document_chunks(source: str) -> None:
+    """
+    Delete all chunks belonging to one source document.
+    """
 
-    from config import DATA_DIR
+    with get_connection() as connection:
+        with connection.cursor() as cursor:
 
-    from src.embeddings.chunk_embed import (
-        embed_chunks,
-    )
-    from src.embeddings.embedding_model import (
-        load_embedding_model,
-    )
-    from src.processing.document_processor import (
-        process_document,
-    )
+            cursor.execute(
+                """
+                DELETE FROM document_chunks
+                WHERE source = %s;
+                """,
+                (source,),
+            )
 
-    raw_data_dir = (
-        DATA_DIR
-        / "raw"
-    )
-
-    path = (
-        raw_data_dir
-        / "quality"
-        / "QUA-INC-001_v3_2026.pdf"
-    )
-
-    chunks = process_document(
-        path=path,
-        raw_data_dir=raw_data_dir,
-    )
-
-    model = load_embedding_model()
-
-    embedded_chunks = embed_chunks(
-        chunks=chunks,
-        model=model,
-    )
-
-    source = embedded_chunks[0][
-        "source"
-    ]
-
-    replace_document_chunks(
-        source=source,
-        chunks=embedded_chunks,
-    )
-
-    print(
-        f"Stored chunks: "
-        f"{len(embedded_chunks)}"
-    )

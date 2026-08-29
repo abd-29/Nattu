@@ -1,8 +1,6 @@
 import psycopg
 
-from pgvector.psycopg import (
-    register_vector,
-)
+from pgvector.psycopg import register_vector
 
 from config import (
     POSTGRES_DB,
@@ -26,41 +24,12 @@ def get_connection():
         password=POSTGRES_PASSWORD,
     )
 
-    register_vector(
-        connection
-    )
+    register_vector(connection)
 
     return connection
 
 
 if __name__ == "__main__":
-
-    if __name__ == "__main__":
-        print(
-            "Host:",
-            repr(POSTGRES_HOST),
-        )
-
-        print(
-            "Port:",
-            repr(POSTGRES_PORT),
-        )
-
-        print(
-            "Database:",
-            repr(POSTGRES_DB),
-        )
-
-        print(
-            "User:",
-            repr(POSTGRES_USER),
-        )
-
-        print(
-            "Password correct:",
-            POSTGRES_PASSWORD == "novatech",
-        )
-
     with get_connection() as connection:
 
         with connection.cursor() as cursor:
