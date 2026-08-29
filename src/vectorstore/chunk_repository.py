@@ -1,35 +1,6 @@
-from src.vectorshore.database import get_connection
-
 from pgvector import Vector
 
-
-def delete_document_chunks_by_sources(sources: list[str]) -> int:
-    """
-    Delete chunks belonging to multiple source documents.
-    """
-
-    if not sources:
-        return 0
-
-    deleted_chunks = 0
-
-    with get_connection() as connection:
-        with connection.cursor() as cursor:
-            for source in sources:
-
-                cursor.execute(
-                    """
-                    DELETE FROM document_chunks
-                    WHERE source = %s;
-                    """,
-                    (source,),
-                )
-
-                deleted_chunks += (
-                    cursor.rowcount
-                )
-
-    return deleted_chunks
+from src.vectorstore.database import get_connection
 
 
 def replace_document_chunks(source: str, chunks: list[dict]) -> None:
@@ -39,7 +10,6 @@ def replace_document_chunks(source: str, chunks: list[dict]) -> None:
 
     with get_connection() as connection:
         with connection.cursor() as cursor:
-
             cursor.execute(
                 """
                 DELETE FROM document_chunks
@@ -98,7 +68,9 @@ def replace_document_chunks(source: str, chunks: list[dict]) -> None:
                         chunk["start_page"],
                         chunk["end_page"],
                         chunk["text"],
-                        Vector(chunk["embedding"]),
+                        Vector(
+                            chunk["embedding"]
+                        ),
                     ),
                 )
 
@@ -110,7 +82,6 @@ def delete_document_chunks(source: str) -> None:
 
     with get_connection() as connection:
         with connection.cursor() as cursor:
-
             cursor.execute(
                 """
                 DELETE FROM document_chunks
@@ -118,4 +89,3 @@ def delete_document_chunks(source: str) -> None:
                 """,
                 (source,),
             )
-
