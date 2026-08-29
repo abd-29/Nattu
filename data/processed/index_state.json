@@ -1,0 +1,842 @@
+{
+  "hr/HR-POL-001_1-0_OBSOLETE.pdf": {
+    "sha256": "096cc5c83f66e8feeec828b61ab4eb6240d8ba602ca597d0814bdb2e9a94bbff",
+    "document_id": "HR-POL-001",
+    "version": "1.0",
+    "content_hash": "d87b548a2fe1ad4e50c25cd4852c0f9f60b721508022dd6f109db0eba860a027",
+    "status": "obsolete",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-001_2-0_ACTIVE.docx": {
+    "sha256": "f0094fb785b222fe3709536c8df0c9e97ef79bf4ec22b979f8c6e45f77a60a46",
+    "document_id": "HR-POL-001",
+    "version": "2.0",
+    "content_hash": "0c2ee435298de327271ffe7f2130088bcd5faa1406451de82a4da5eaa5c46048",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-002_3-2_ACTIVE.md": {
+    "sha256": "a719389a178b0e121da602b9914848ac4d7611623f52263c90a23e57a6ac6586",
+    "document_id": "HR-POL-002",
+    "version": "3.2",
+    "content_hash": "7706577e2690ae4c0a33bd3b0764dae86fff14a5273e448ca393550c75538680",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-003_2-1_ACTIVE.pdf": {
+    "sha256": "11d8c316f44234072ccbc5d73b87e41e6b8100cd34973b4b3c6d8ce54e08635c",
+    "document_id": "HR-POL-003",
+    "version": "2.1",
+    "content_hash": "27212088bc5cf80618ddfbec9a7b067266a54d31d1a3cb3ba537b2da88afc501",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-004_2-6_ACTIVE.pdf": {
+    "sha256": "d9748ba0750a8740bf60ef9548a64b43fb337b5068a25323a672e2bb4a215f91",
+    "document_id": "HR-POL-004",
+    "version": "2.6",
+    "content_hash": "a44d2728ba8eb957da25734dab26298138b8fb424509ca73f3fbc3beeaca668d",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-005_1-9_ACTIVE.docx": {
+    "sha256": "01d9b56ed61ac46118eb721bc294b1cd537b466d4fa1d2bb9cb71e17c9ef4d16",
+    "document_id": "HR-POL-005",
+    "version": "1.9",
+    "content_hash": "a20e4b4ff98f30bf9caf06926790eeae68f82f7d30bfb0ad68c9d3a7268cb256",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-006_1-3_ACTIVE.md": {
+    "sha256": "79eeb329b47f621672c4c1f2b079de99d3bb5bbf96345ebf578841dc8c51791c",
+    "document_id": "HR-POL-006",
+    "version": "1.3",
+    "content_hash": "70e6cedae89e844cc1da30b8b55600475fa0b3f373e3ab583f55fe7ce5d97e93",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-007_4-0_ACTIVE.pdf": {
+    "sha256": "3c647028fc752c87dfca3fd3974cf60ca675ab38bbef77ce345d8bbc48a43267",
+    "document_id": "HR-POL-007",
+    "version": "4.0",
+    "content_hash": "0c5884dad6aa6508c6ed68afa74e668333cf27b67aea62de985ba45e0a288310",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-008_3-1_ACTIVE.pdf": {
+    "sha256": "6d8831d60b8a6944128683d700752841d8f1ed884941ed04fc1512d0402ac851",
+    "document_id": "HR-POL-008",
+    "version": "3.1",
+    "content_hash": "b4cf092a32d16e7cb1fa36c21ce5637b03f99671985c931b5e3cae4efa7b057c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-009_2-0_ACTIVE.docx": {
+    "sha256": "b5f00a0bbacfd34a60505076df92731badefcc92ea17792fe1006b0b4d846ff7",
+    "document_id": "HR-POL-009",
+    "version": "2.0",
+    "content_hash": "bb0c9b3c61441d925918f43a7757bf7d03ad87c13d783952371e70d299d920fb",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-010_1-2_ACTIVE.md": {
+    "sha256": "1769d6a2f51b14e2bada77727899da1aea6b46fddc940f1ea85bce99ed1d114e",
+    "document_id": "HR-POL-010",
+    "version": "1.2",
+    "content_hash": "e0365a629fbe26803084f6ede77eb40b0d8331ef0625780fd1d15ddf184b584e",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-011_1-0_ACTIVE.pdf": {
+    "sha256": "5a64d98a0dba9a1e89502100d1e5a234b307fd3c8f488f2677f706cfbe188135",
+    "document_id": "HR-POL-011",
+    "version": "1.0",
+    "content_hash": "d181f8ea3b54ae838cbab717306197054588b0554a64a45b8a339e775951ab38",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-012_1-0_DRAFT.pdf": {
+    "sha256": "19cb1a0de36aa8c67da87b78e3c99dcb38971b0fdbdf7d94c02fd8b67a43b51f",
+    "document_id": "HR-POL-012",
+    "version": "1.0",
+    "content_hash": "9fe4c1d4bffb2894459179c48b027056596453f73d6693aaa2208eecfb627f5b",
+    "status": "draft",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-013_2-3_ACTIVE.docx": {
+    "sha256": "e518e23b55b3ba5065cf8f1af25bf051a9c411dfcf7a69c4c767dfa99b0181fb",
+    "document_id": "HR-POL-013",
+    "version": "2.3",
+    "content_hash": "624e5b370ca3b712fefd3b7a3a47325238615d235ab9b0094fab83a78fb2121c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-014_2-1_ACTIVE.md": {
+    "sha256": "63c3ef1f8e415f8688a5d89436917deb80dd9fa6637c9533970119ee48ec457e",
+    "document_id": "HR-POL-014",
+    "version": "2.1",
+    "content_hash": "b09887c96d1062f087438515abb58428312627bf3ffed5a3674c6edd30317f62",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-015_5-0_ACTIVE.pdf": {
+    "sha256": "7f61b705c6acac2473e8ff7e849418bf8a9885500de8a4829e6feced354e13ea",
+    "document_id": "HR-POL-015",
+    "version": "5.0",
+    "content_hash": "c38ff889582be28106ac4e26c948e129986d4006c6ba90a3528227b808e43c0f",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-016_1-4_ACTIVE.pdf": {
+    "sha256": "c95c131c27286b4c28075c0920a8545e17ac17b679066b1f8a9d0a88f4865593",
+    "document_id": "HR-POL-016",
+    "version": "1.4",
+    "content_hash": "35ebaad0b1b3fefed7df8d0dd0837105b91bb436421a182f67fd8ab982d022dc",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-017_2-2_ACTIVE.docx": {
+    "sha256": "fa0a0b9fd56ef100f9945cb5ba5f5713e0a454cd26530c186fa6a8577f7fcad7",
+    "document_id": "HR-POL-017",
+    "version": "2.2",
+    "content_hash": "9c4e92a6851204973a2a1fd569804d07828b28241807828eba1eae2c31b86746",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-018_1-8_ACTIVE.md": {
+    "sha256": "96f1d13cdfb5309bb1e4c1beebc7fb0898a82066e896a3a1ba5d0b93bf31ff49",
+    "document_id": "HR-POL-018",
+    "version": "1.8",
+    "content_hash": "25b397a87cecc30cf48f41cc20d7c46a115c11db1fc0bbebf45c8221cd983e82",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "hr/HR-POL-019_3-0_ACTIVE.pdf": {
+    "sha256": "1cb5b05c6aa82d1498eea6c3e4d3102e6dbc79b26cd8855742429c8481f6ba4f",
+    "document_id": "HR-POL-019",
+    "version": "3.0",
+    "content_hash": "27b1bbbe720f543c7ea34d16d6d8fec50011357be3da352964964b9204895618",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-CLI_2-2.txt": {
+    "sha256": "8cf6bcd5aad5820eef92760e3e9f686ff729285e45ed05b8aa8a76955bcdefe8",
+    "document_id": "PRD-ALP-CLI",
+    "version": "2.2",
+    "content_hash": "7874f60f9f1f4d6dc8b42c58948c62ae36fb6de39f8066dc4effdc0c577e234a",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-DS_2-0.pdf": {
+    "sha256": "ccec5171e2dab791c0b064325a6466b4c5fc021f84a2858531bf4fd00b6f34f2",
+    "document_id": "PRD-ALP-DS",
+    "version": "2.0",
+    "content_hash": "23f1d593c96edaff6fff3cf72bc5d0de7834c67b249efdaf77e110920a830a6c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-ERR_1-4.pdf": {
+    "sha256": "99880443532b90028ddbb9d478d6e33838fe0fbb49a813dfd63f457c49868064",
+    "document_id": "PRD-ALP-ERR",
+    "version": "1.4",
+    "content_hash": "2be48e4adc7007b3dffa3cf257d2aaa3aa0e7e23a2c2e66d04cd1bf04468ece5",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-FW_2026-08.pdf": {
+    "sha256": "7de2ca257949a363e39682982daa9419b56ed8be89dc3ada995bc3f3275dc01c",
+    "document_id": "PRD-ALP-FW",
+    "version": "2026-08",
+    "content_hash": "3808aca2ffbb296240a5d5d2d4a09b9451449a74f4ac51c6291e314205e4529b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-INST_3-1.docx": {
+    "sha256": "4e7c6d3e7f76ae343da65e0bb25346117161bb750ecab1c65105b325db245f78",
+    "document_id": "PRD-ALP-INST",
+    "version": "3.1",
+    "content_hash": "69d189c60fa00f98eb22e486e9af4b9451d8252a64b995a8a089fa470a392217",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-KI_2026-Q2.pdf": {
+    "sha256": "5a0c933bee7c0fcfa6259c333d3f28b05fc45d3e08f6eafa16a9f9bf0e653324",
+    "document_id": "PRD-ALP-KI",
+    "version": "2026-Q2",
+    "content_hash": "eb67ebedf8de95f88f4ff8cf1a62a5f020a7f640b64bf81ce5f7ef98082a21a7",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-MAINT_2-0.md": {
+    "sha256": "889db38e77bf6c95adf47e33459ecbc6e301288b66b6c509d5ed6fc5594b1533",
+    "document_id": "PRD-ALP-MAINT",
+    "version": "2.0",
+    "content_hash": "b6721a7bfe0aa1bb64d417ae85aec4ce86f36d450fbf5e96f728283bb6fe85ed",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-MAN_4-2.pdf": {
+    "sha256": "60787e2a3de0cec57c053e02b1efb1fd938b6b84834766658d5fe5cb50375542",
+    "document_id": "PRD-ALP-MAN",
+    "version": "4.2",
+    "content_hash": "d81a78b37e3e29f7207ce7b7ad0c13bc94fe93f963e5488387d748304fee1c06",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-RN41_4-1.txt": {
+    "sha256": "ac64a64fdedfc85fce50a4b8d1480d58e9da324e6c18e4b444c8fe58d8bea81c",
+    "document_id": "PRD-ALP-RN41",
+    "version": "4.1",
+    "content_hash": "336a491b44d8c4fea2e52d095549c7b884a0816c9d41cebb59ac1a3add8712e4",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ALP-RN42_4-2-3.txt": {
+    "sha256": "8a96d5e525dd2960ca4c8b205657cc361262ebd94510846b1515ce10fc41ef23",
+    "document_id": "PRD-ALP-RN42",
+    "version": "4.2.3",
+    "content_hash": "cc1e96b6422068f83ebc4a77780cbc004405cd486c67e59e7c6c5fd9be3d19b4",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-API-ENG_1-8.md": {
+    "sha256": "501e71c99f6aa9d4e53b6d6d4e25948bf369a78590e85566c2f0af69804d2ad0",
+    "document_id": "PRD-API-ENG",
+    "version": "1.8",
+    "content_hash": "58a6d679cfe8fc3f6cb3f7c5dff1555a8e776b93ee1296b07cfa3f110974027a",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-DS_2-0.pdf": {
+    "sha256": "7f3ca062a5d8fb367e1313747291929d95d941c39e20a3cb0f549637de022836",
+    "document_id": "PRD-BET-DS",
+    "version": "2.0",
+    "content_hash": "841bebdce2e7f4bf50f9cbeec03d5d004bb1c23a31ef530bfa8289d9cf979183",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-ERR_1-4.pdf": {
+    "sha256": "70382071953455ac77a409a6cb91be8a44d44424fd11565cc292a9276acb74b3",
+    "document_id": "PRD-BET-ERR",
+    "version": "1.4",
+    "content_hash": "6b9262ad8aa397fcab8dfd383b35e9893ff00479855071b83483e6edb2453743",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-FW_2026-08.pdf": {
+    "sha256": "a81aa2a523ef3975efce91d425045adac6be18f0eeb0239a3d8aa299acf8aded",
+    "document_id": "PRD-BET-FW",
+    "version": "2026-08",
+    "content_hash": "d0c0316d39a8adec9ac3b719ad9d04c45fa7f8e16f527ad24ef59d5808f2f8ab",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-INST_3-1.docx": {
+    "sha256": "c8734807c88a674b5059b68c4efde090b6df5d2d83aabdfba67082a55eef56cf",
+    "document_id": "PRD-BET-INST",
+    "version": "3.1",
+    "content_hash": "d9f55a8842c3250e929218d6b2583c17e0a59ee6a6bb60c0fb8a914fa4a329f7",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-MAINT_2-0.md": {
+    "sha256": "f0228e9f064468659c657749910f059074c7afe9ec9460d3c46ee1a23ace2f57",
+    "document_id": "PRD-BET-MAINT",
+    "version": "2.0",
+    "content_hash": "65dea4ccb10a72b6165af1787e5d22ccd872f9f51d456131e316344935713e2f",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-BET-MAN_3-0.pdf": {
+    "sha256": "29fb2cb92b9e0a71a06455c39f1716eee05721282b0099db8ed86c9ad06c09f3",
+    "document_id": "PRD-BET-MAN",
+    "version": "3.0",
+    "content_hash": "11c8066a5d43f763a125b4100c1415b575e788a42fcccce3528c01ae9c64a644",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-COMP-2026_2026-2.pdf": {
+    "sha256": "3407091f169e9d455b36a2d67b6c35fcf3168c245fb3eca256c52bb22e306144",
+    "document_id": "PRD-COMP-2026",
+    "version": "2026.2",
+    "content_hash": "0985e456315744a033af41122d1d50ccee1a3c940414715992ed71e9b6aa5f0c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-EMC-ENG_2026-06.pdf": {
+    "sha256": "27a2986e7f190a83f704e9915598d4b4ddab1d7a0b7f37771fe4b7250baf5006",
+    "document_id": "PRD-EMC-ENG",
+    "version": "2026-06",
+    "content_hash": "48f7239f67bf2a539c56317e1aab46315b39cfd09fc5cb9a10a07038f1c73ec6",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-ENV-002_2-0.pdf": {
+    "sha256": "d32a1784dffe30f23d2aae3c3ecb673d0e688001b0a785c3227d5ab90daae1a7",
+    "document_id": "PRD-ENV-002",
+    "version": "2.0",
+    "content_hash": "09aec6ec48d5addb97dfe464649ef7b759ee2f2fa99e5c0df0fe3f2b01a27e7b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-DS_2-0.pdf": {
+    "sha256": "0f08d33ba78aa319bf00c2033a83af662e22d1958dd9312242409abc9d9ee592",
+    "document_id": "PRD-GAM-DS",
+    "version": "2.0",
+    "content_hash": "912af8ed72ef9a850a15e7356a57c3c1ed1db9dc52dc3f745a90280d48710d8a",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-ERR_1-4.pdf": {
+    "sha256": "b0493b25e790f29b0bb1be89a34ce9c3ab00b5a179719c1ce28c596d8b565208",
+    "document_id": "PRD-GAM-ERR",
+    "version": "1.4",
+    "content_hash": "d2834a9e8e3dccc6925d253fc49847265586dabe0dea89f7636ad3657e65617c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-FW_2026-08.pdf": {
+    "sha256": "d4f4a59494bffd73fdeceda824da05e6d16e374ac963c308786253e7cb8eaefe",
+    "document_id": "PRD-GAM-FW",
+    "version": "2026-08",
+    "content_hash": "71ca83fbf79f12451cbc48517145ae9a809b55a6f7e4634e0ec1c4ed79185bef",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-INST_3-1.docx": {
+    "sha256": "34c427928e99de27e6cd7b8102998dd4218bc51a6cf459a91d825f2ccef08092",
+    "document_id": "PRD-GAM-INST",
+    "version": "3.1",
+    "content_hash": "8f8465ad59f812c54e9b4a5a1677330c68357a456be25979576664c94d3a22bc",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-MAINT_2-0.md": {
+    "sha256": "f4bfe8b31f0547c39fc2db83dafd21d17976c9e3a1e76d73ac9b5610d404dd34",
+    "document_id": "PRD-GAM-MAINT",
+    "version": "2.0",
+    "content_hash": "b3c044add77d3b5f7450900f109d076340f2c132d31dc5bd013f0bbe9bc6d2c5",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-GAM-MAN_2-5.pdf": {
+    "sha256": "ce0b148fb063a8b282185537defe54c283d85e8362c6c3773d8bc64ac5466bf6",
+    "document_id": "PRD-GAM-MAN",
+    "version": "2.5",
+    "content_hash": "be6662e1affc0c67509e2470dce80ee670d6301dddd43b6c9afc4aa2726822be",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-IF-005_5-0.pdf": {
+    "sha256": "1ec61304b425599eac7e9502780996431c0f758f9d20355707c40440f3d2722e",
+    "document_id": "PRD-IF-005",
+    "version": "5.0",
+    "content_hash": "e015dfb8e630476d8f8f6f7e040884d4f34ab8f25783c27034cf266e1fa21d0f",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-LIFE-2026_2026-2.pdf": {
+    "sha256": "0aeebfa60696674ab04c8c37f5213002e10577872b8f382b7237cc0e17fe003f",
+    "document_id": "PRD-LIFE-2026",
+    "version": "2026.2",
+    "content_hash": "da5ce9465acf02cd17ebc312fc6569fe930d04eddac67625001a0b8a0c56141f",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-PACK-ENG_1-2.pdf": {
+    "sha256": "95f07f34bc3fc7e0d9d546ad7c73192bea7d0ce9455afca7699a7fc7897cd845",
+    "document_id": "PRD-PACK-ENG",
+    "version": "1.2",
+    "content_hash": "3e273e01855bed0fa5ce3d4544725dfb40f39fdb683c9341ce47806312254c97",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-REL-ENG_2026-08.pdf": {
+    "sha256": "14dc9100389818bf2d9d1d6f02ae1622cd17358d43a73f6b2862d9d91321205b",
+    "document_id": "PRD-REL-ENG",
+    "version": "2026-08",
+    "content_hash": "11c871f86aae204edf7a38b4542fcf82650f85b07165111f2a92149f54946abc",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/PRD-SAFE-001_1-0.pdf": {
+    "sha256": "232b5ff0e87919f38cc2e604e536a820f981dc47e8ef04e7ff2b4bad1b076707",
+    "document_id": "PRD-SAFE-001",
+    "version": "1.0",
+    "content_hash": "999f22f4bc14bd069d2b16663e94a515222626c5f675cf9e1c96a03f1f49b967",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/SUP-ALP-CONN_2-1.pdf": {
+    "sha256": "6734086a0b19b55b6d9fa28e30a0085900d4461488429934e83d2da8cf299148",
+    "document_id": "SUP-ALP-CONN",
+    "version": "2.1",
+    "content_hash": "9d0f5233b122dcee2bdb4c7e8d31a518eead23d5b4798fd2d78927d88b9ccecb",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/SUP-BET-NET_1-5.pdf": {
+    "sha256": "07433486bcaa801139a40dfcc209857ef6fb18da5399e493dcc44590ad535775",
+    "document_id": "SUP-BET-NET",
+    "version": "1.5",
+    "content_hash": "aa8575c498bc0f6ab2cbb4a5309debf0d1f11086505169b7b06efe465a1468ca",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "products/SUP-GAM-SEAL_3-0.docx": {
+    "sha256": "48a837a2408a9cdb6f16b2465689352a3e77db53a3ae7661af1a7aeade4eebd0",
+    "document_id": "SUP-GAM-SEAL",
+    "version": "3.0",
+    "content_hash": "e9ef74848efc6eda328d0b7d57190df15dfd85121a13ff7c9998b6dfae0ca361",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-AUD-004_3-0.docx": {
+    "sha256": "80285573369ec8f173435357f9aa85e4d1d79e13c0cc20ee7edc401abdd3a100",
+    "document_id": "QUA-AUD-004",
+    "version": "3.0",
+    "content_hash": "19be6458bca7d9675d0fa0b748e77c97ee6496255965cd51a779833944c40f91",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-BUL-015_1-0.pdf": {
+    "sha256": "4385337488bbeeb781c5a4181c4954b6571470b239e8bfce363b6aad174ac13a",
+    "document_id": "QUA-BUL-015",
+    "version": "1.0",
+    "content_hash": "0256f76c39361b0ffa8683b4bf5695d79cd776be33c85b86ff9c50b6571d36d7",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-CAL-009_1-7.md": {
+    "sha256": "8b402b6603345d2efbb31e5ee213b7de566e55a66777dbc543a47bde510e3ad9",
+    "document_id": "QUA-CAL-009",
+    "version": "1.7",
+    "content_hash": "8b22bd51a217615f56cc7a7679facec4cfbe28ca1ca41d6d5901c402248a2c4b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-CAPA-002_1-4.pdf": {
+    "sha256": "de736b2b32ffbebffdc5c6f08c6b4a7030316adeef1798ad9e037e114da090d9",
+    "document_id": "QUA-CAPA-002",
+    "version": "1.4",
+    "content_hash": "a078f5d6e2f482b364afebcbf64f52e1a78503ab445fb69862b449722372ae0c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-CHANGE-007_2-3.pdf": {
+    "sha256": "dc2e47ca28b333845800b25a91e8d2501cb5f183f6d5bc55a41cffc6250d6bf9",
+    "document_id": "QUA-CHANGE-007",
+    "version": "2.3",
+    "content_hash": "f278a85c3beae61ac99c6554b5e8c3ac4b5e54e00bbc9fe16c71d01b2106e53e",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-CUSTOMER-019_2-0.pdf": {
+    "sha256": "fbca1f9a96abc26efc2f65af4848a2258f7694f32d83e8f5540b6d124e9cc857",
+    "document_id": "QUA-CUSTOMER-019",
+    "version": "2.0",
+    "content_hash": "1bc4751945830442f480661287c1d33283618029511a7532472e9640589bd20a",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-DOC-008_4-0.docx": {
+    "sha256": "68ee1156ddf8f5af976bfdf33f5460cfcac71e1e59bfaf48d367b55d8cc8a13f",
+    "document_id": "QUA-DOC-008",
+    "version": "4.0",
+    "content_hash": "b453f261901fc238d25dfb119f139382b6e0fee029ce40552d59385515233c59",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-ESC-011_1-0.pdf": {
+    "sha256": "7cb47b3cfa5442fdf2b4ca6e07f5d87664bb76bc066c0c1751048cf0179a5ff3",
+    "document_id": "QUA-ESC-011",
+    "version": "1.0",
+    "content_hash": "40445de96ebaf803a8293f2f910e3c5cd70f4aa3fa867810a2abe4141850165d",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-GLOSSARY-017_1-3.md": {
+    "sha256": "e3646c27d1ce9d240873bcdb4600bd3989fd8e25e6dcbbacf217a31759fb2641",
+    "document_id": "QUA-GLOSSARY-017",
+    "version": "1.3",
+    "content_hash": "59e3874acb62592da02047c855f54a8735a165ff24d121d55aba3ebdd7f80c0d",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-INC-001_v1_2023.pdf": {
+    "sha256": "28b3623663b26f7a316e33ac9d80578c971c5b9db0caca8551fb51254518ab92",
+    "document_id": "QUA-INC-001",
+    "version": "1.0",
+    "content_hash": "709a6ef1803effb6824253ef3a20270f7cdd21fb80eadf389293fe067b3807ba",
+    "status": "obsolete",
+    "decision": "indexable"
+  },
+  "quality/QUA-INC-001_v2_2024.pdf": {
+    "sha256": "04c1d8c1d8602735ec905d6d52c4f381ee20f666e305ed3ff9a5b6f29daab190",
+    "document_id": "QUA-INC-001",
+    "version": "2.0",
+    "content_hash": "30b6743956cf1605198bca64114f9724cda0e5751e20980df85e951348f83f63",
+    "status": "obsolete",
+    "decision": "indexable"
+  },
+  "quality/QUA-INC-001_v3.pdf": {
+    "sha256": "40dbb5d28047cd8302204ae46f5859a56e69e204525b7481e3e703ef38f181d9",
+    "document_id": "QUA-INC-001",
+    "version": "3.0",
+    "content_hash": "c95b5c0fe73bceb26286809aa65db64e9f4554d7cbbb7cea3aa6a542cdf98337",
+    "status": "active",
+    "decision": "conflict"
+  },
+  "quality/QUA-INC-001_v3_2026.pdf": {
+    "sha256": "c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d",
+    "document_id": "QUA-INC-001",
+    "version": "3.0",
+    "content_hash": "272331e3f0f39339d6e7dc0a6b96819e964a4405671bdac5c23685f963fae4e9",
+    "status": "active",
+    "decision": "conflict"
+  },
+  "quality/QUA-INC-001_v3_REFERENCE_COPY.pdf": {
+    "sha256": "c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d",
+    "document_id": "QUA-INC-001",
+    "version": "3.0",
+    "content_hash": "272331e3f0f39339d6e7dc0a6b96819e964a4405671bdac5c23685f963fae4e9",
+    "status": "active",
+    "decision": "conflict"
+  },
+  "quality/QUA-INJ-024_1-0.pdf": {
+    "sha256": "0e0302dff2d7e0a775f25ac1c7d6e169dc57325a6dd3ecd293928c475c4a2b6c",
+    "document_id": "QUA-INJ-024",
+    "version": "1.0",
+    "content_hash": "c7b81a6938446aac518fc8492239f38993d52bb668f45f4c2a546b1b5d0979d7",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-LEGACY-016_scan_2019.pdf": {
+    "sha256": "650be4f88aa10b828deb162ac9b69c8744825817339988085ae11c655d931bca",
+    "document_id": "QUA-LEGACY-016",
+    "version": "1.0",
+    "content_hash": "4aa7e17d322d4cc89b05c1f57d12b9584cf1eda14ed53ec7691af9cc15ab5815",
+    "status": "archived",
+    "decision": "indexable"
+  },
+  "quality/QUA-MET-014_2-2.pdf": {
+    "sha256": "1d4e407f72e7fcf32be5edbbfc6f5a9c653007651719be2005a1225068b2f2c5",
+    "document_id": "QUA-MET-014",
+    "version": "2.2",
+    "content_hash": "d90c8e055adb5d6ca4bd8093996b90e378103ae1df1fb8cf426ccca1a00b16b1",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-MRB-013_1-0.md": {
+    "sha256": "12e5912dbc955c0a08473f48e454db0daa01368b57838ffbc6be9968f46d4b63",
+    "document_id": "QUA-MRB-013",
+    "version": "1.0",
+    "content_hash": "e5527eb6c9fab1d20c258a2af918ea00f37568c460b86432e5be2761975e5027",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-NCR-003_2-1.pdf": {
+    "sha256": "2e777b6b1ad5df726c725860f1f8dd3f79fa3d7374f1aab4824b770ee5a9b340",
+    "document_id": "QUA-NCR-003",
+    "version": "2.1",
+    "content_hash": "60485a6eb9fbdf120bf7b81a543fe6eb8c0585fe59c95029239a71842ccab5f9",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-RECALL-012_1-0.docx": {
+    "sha256": "eb9ee7127387b1181e6da699527456a58fe8f2a36b746da6bc8a1b39a241e959",
+    "document_id": "QUA-RECALL-012",
+    "version": "1.0",
+    "content_hash": "af38723a49ffa6130458c8dbcd18444194e47810a52e8f017ee2b54a08d997fc",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-RET-022_2026-Q2.pdf": {
+    "sha256": "766ac2651e96f7c2c9ccae7ce256b46fc41f7bcf5033aac4c181fdda71c40e4f",
+    "document_id": "QUA-RET-022",
+    "version": "2026-Q2",
+    "content_hash": "44d29cb7119d75967f5eebdf8256301d8516336d1f253571d15d3b34dbe6a8f2",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-RISK-006_2-0.pdf": {
+    "sha256": "007de7a536117634095ff81014b0ec9841c1facca403ea5c00bddcd694b0ac83",
+    "document_id": "QUA-RISK-006",
+    "version": "2.0",
+    "content_hash": "322792055a66111f79280f22b7a5c817fd5665eabbff19c205ecfc51cc0b6138",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-ROOT-021_1-2.md": {
+    "sha256": "d902dad901083fae56efc0ed8a862bbc30bcd98346f5e93000e7df0f3f655394",
+    "document_id": "QUA-ROOT-021",
+    "version": "1.2",
+    "content_hash": "73bcefb34d9a31e24852149ea1170772cb7ce1e66e2a3e77b416a033bf9683b8",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-SAMPLING-020_1-5.docx": {
+    "sha256": "d3c51f8559be8a1061f85d785562a3cba8f57634fb23bd959a9e1a5aa7a1c99f",
+    "document_id": "QUA-SAMPLING-020",
+    "version": "1.5",
+    "content_hash": "0b6f6408da1f7cf5f256a060a7c99e974026f161dc0e939a922cbf76fbdc601b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-SEC-018_1-0.pdf": {
+    "sha256": "386d7c5820eabe4ea29896fa41a660001a3c3f84233163d155cc5ea4399f8903",
+    "document_id": "QUA-SEC-018",
+    "version": "1.0",
+    "content_hash": "76cb5ec2d64508301136f1666b5d20c1a8d39050e0f014e7b6926116f82b7f9b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-SUP-005_1-2.md": {
+    "sha256": "dc813c2c30d14f266e94306693d76dcae69f32a1ac664b75fae9377add49745b",
+    "document_id": "QUA-SUP-005",
+    "version": "1.2",
+    "content_hash": "b6c64f9cbd8f4ba740cc5e7c851dce47f4528fa68f6e4d311b25c962af2c5788",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "quality/QUA-TRAIN-010_1-1.pdf": {
+    "sha256": "d1ec262482da246fa76ee65541dd049d6217c34788acde9f595f6b46cbb1b7f1",
+    "document_id": "QUA-TRAIN-010",
+    "version": "1.1",
+    "content_hash": "b98d004a82257a0b56226cd6a7cb54f53d72f9260fa6ab3ef9206e26e9d232ba",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/CASE-ACME-001_1-0.txt": {
+    "sha256": "3970e99e0f3590993ed548696d187b28149bfe7a96fcdcb3b92b981bec66f5c9",
+    "document_id": "CASE-ACME-001",
+    "version": "1.0",
+    "content_hash": "fabd457b172fd2d21d2d2864eb0ab9fe60423db0eadd3320aa38aee2c4e3d0d1",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/CASE-ORBIT-002_1-0.txt": {
+    "sha256": "fd7c2125c98ed6e9a14464a32299922dadb84e14f327dedd37f6e8eff494c86e",
+    "document_id": "CASE-ORBIT-002",
+    "version": "1.0",
+    "content_hash": "c011b5ce6c5a35669e11b91ea847dd938891526acd57ff7a7fc4efd7c7e90686",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/KB-1001_1-2.md": {
+    "sha256": "1b85bcb77e4c637825fa141ec8adb11851df0855c3c9b4497885613992b1d92f",
+    "document_id": "KB-1001",
+    "version": "1.2",
+    "content_hash": "c536f8134b52e94e59e55e027d01611665136db0cf2152ebe02a8938de1b3194",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/KB-1002_1-0.md": {
+    "sha256": "2104ff99d3a36741fa4d135d70a06a13987925b07d69888c4c4ea79bc5094e0e",
+    "document_id": "KB-1002",
+    "version": "1.0",
+    "content_hash": "ec98b62ee57872900a29e7df6d8822dd495418784b61a9593b5f6a22bd1b3df7",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/KB-1003_1-3.md": {
+    "sha256": "6886f1a3c6c9d4ac663fe1bf95884ad5d6a6bacfdebdce1092948ea6a4a82113",
+    "document_id": "KB-1003",
+    "version": "1.3",
+    "content_hash": "1dfb158303147e49bb3ce31218ece3ffc4131d5639fd10208027b8209b82c257",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/KB-1004_1-1.md": {
+    "sha256": "9614707910e2814770a90c0cd6796e2e92fa98ad559af0ac80dfef13da6a3408",
+    "document_id": "KB-1004",
+    "version": "1.1",
+    "content_hash": "73113a3b533bea388b47dc35b1d43c5ce2d645c1c15d4f99951536ff962afe6a",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/KB-1005_2-0.pdf": {
+    "sha256": "88ae2172fa786dc0fcff0bb37bafa29d83ea1d6ad33aadd0ac8a385082546559",
+    "document_id": "KB-1005",
+    "version": "2.0",
+    "content_hash": "42a3a6ded3cc62986839c3029b87054c4869fea5440e58cf2ccddf5ab156b570",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-CLOSE-012_1-2.pdf": {
+    "sha256": "e79675013f0a0d122f0b151a73fc7617295ef04ffbeb7c962d464e0051359980",
+    "document_id": "SUP-CLOSE-012",
+    "version": "1.2",
+    "content_hash": "616959ebe3cccf5261a5ef9e84b2d4ff0e586cfbaa6effa23a0436dfc62f9d77",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-COM-011_1-3.docx": {
+    "sha256": "767a828fe197ca0130a7cb1be08b7d24f011e26f217ded78b0b9de20a0812061",
+    "document_id": "SUP-COM-011",
+    "version": "1.3",
+    "content_hash": "d131e7ba80446b1d2d7e4e2d6811dd85007e2c95a7b58380682b70033068781c",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-ESC-005_2026-2.pdf": {
+    "sha256": "acef0eebac6f28b879d2e426717f4609c37b198363759718a6c0331751f734c9",
+    "document_id": "SUP-ESC-005",
+    "version": "2026.2",
+    "content_hash": "c69f3b3936c8f9450ff1aeaa064aa9569271aa7da0409f2e17b3d614ca69aba1",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-FAQ-001_3-0.md": {
+    "sha256": "3bee39fbe752e766d5800c5f0b15ee5eacdb244ec6a0a5d482e12b22d195093e",
+    "document_id": "SUP-FAQ-001",
+    "version": "3.0",
+    "content_hash": "78221454f12dba3d92b0a70216441df34d3d352725b6412259da35d494a4b312",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-GLOB-013_1-0.md": {
+    "sha256": "0c8b3a78b5250bd923d37a4f53284e65736430a7570f49c19eea97e2d9ec6bf7",
+    "document_id": "SUP-GLOB-013",
+    "version": "1.0",
+    "content_hash": "ccb5ce76f99e74f2a2f835a4f379ec1261ec0e4b35aeddc88033bb756467f134",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-HO-006_1-0.docx": {
+    "sha256": "e6e0b7811122c2070b73fb7e875ccc070cc485a414912570d962ca0df6eb1f8e",
+    "document_id": "SUP-HO-006",
+    "version": "1.0",
+    "content_hash": "ed70f40c0eeb782984f452810c367d07d2ef064228485fc537d8f0ebaa7ee328",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-ONCALL-010_2-0.pdf": {
+    "sha256": "bf76fb58e08bb4f0e039b8ce31ffd4df24998819c2660df1d8fa5a78fd569399",
+    "document_id": "SUP-ONCALL-010",
+    "version": "2.0",
+    "content_hash": "91bcc314c66eefa9420a44659c34115f6ac9c266be7b70bcd74bd736eec84169",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-PM-0184_1-0.pdf": {
+    "sha256": "0ef743b8ff777c70c582cef0fb88f8f44c7502cea5d62452901d82b8758801b7",
+    "document_id": "SUP-PM-0184",
+    "version": "1.0",
+    "content_hash": "260e8e93568592449ab3be917821f7caa06ef059da6302f4cb67e0e346dd4b68",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-PM-0217_1-0.pdf": {
+    "sha256": "b4455c4b61409c29fbb444cdf826497878cc1d95509a9b2722a572a86d4e0878",
+    "document_id": "SUP-PM-0217",
+    "version": "1.0",
+    "content_hash": "4c75ad0592e475d8fe9b366aa89d65610d1d1e855a58361db2af26479155504e",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-PM-0251_1-0.docx": {
+    "sha256": "3d758ba39dc0fee5f2677a1e1f6e96cd8add90cbb344cffb54f8e3ac664edbfc",
+    "document_id": "SUP-PM-0251",
+    "version": "1.0",
+    "content_hash": "d15fbec0ecfdbaaea603ce785d66c305b7745f1bcbba40d8c025bde75f644c0b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-RMA-009_1-6.pdf": {
+    "sha256": "12d435da7d0883d1378f7a772617d5bfb17f570b58b03161866f67fe7e7a9f17",
+    "document_id": "SUP-RMA-009",
+    "version": "1.6",
+    "content_hash": "6d7f5365420a7e82c6e5239c11cdf4a99345b053772ab8c2c0c6f56013ff2e2b",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-RUN-ALP-002_2-1.docx": {
+    "sha256": "b25621f8d56f70ee43ee1e6f82e1aaed3ac02b05a8534a03f82100a2f33d08f1",
+    "document_id": "SUP-RUN-ALP-002",
+    "version": "2.1",
+    "content_hash": "c6af9f9fb9a53ddfc5e430d2786cc0c87360a9ef5734ad8da31966ba301d7fff",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-RUN-ALP-003_1-5.pdf": {
+    "sha256": "fd6e6a21b9a29c45812bcb0a1b12ea57bf71b44e422e96f7e8c64ca3119c451b",
+    "document_id": "SUP-RUN-ALP-003",
+    "version": "1.5",
+    "content_hash": "92ae87ae34c813936bd947c28bf7b5c365522705e9e2fd81a554e18c98bc8ca8",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-RUN-BET-004_1-8.pdf": {
+    "sha256": "8f991140b926458546f5614087f46c3296840033396c2f5de93593924be6b354",
+    "document_id": "SUP-RUN-BET-004",
+    "version": "1.8",
+    "content_hash": "d0542b765103ba9de8f3bdf080a237f8837ab0652fc3f1383630668387921abc",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-SLA-008_2026-1.pdf": {
+    "sha256": "c86661f6f5e5347ca8ebb77aa64aa4d7fe40f0cd75b06cad6f0ef09f6ed35774",
+    "document_id": "SUP-SLA-008",
+    "version": "2026.1",
+    "content_hash": "587ffcd48ac68bfb53872bdb860a864ed67bb8445c1a67bdee978a5773fc4d83",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-TICKET-007_2-4.pdf": {
+    "sha256": "e89220b892fca83723fc1e8df679083af19731610a9a2e9bf575eac36efd08ad",
+    "document_id": "SUP-TICKET-007",
+    "version": "2.4",
+    "content_hash": "b26a7c357cec8e2512ccc34a7fa13daf9b742e52eac6b9aa4802f66ca7cc1f28",
+    "status": "active",
+    "decision": "indexable"
+  },
+  "support/SUP-VEND-014_2-0.pdf": {
+    "sha256": "ced84a6057784edcd6d75cbb118fb435deac56b3ac663541a85a4c5151e52155",
+    "document_id": "SUP-VEND-014",
+    "version": "2.0",
+    "content_hash": "773321dc505cc42659f20c60dcb2874e74eca4fec2c51ec8d8a35e36e18f4812",
+    "status": "active",
+    "decision": "indexable"
+  }
+}
