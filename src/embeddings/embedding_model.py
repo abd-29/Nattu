@@ -1,10 +1,7 @@
 from sentence_transformers import SentenceTransformer
 
 
-MODEL_NAME = (
-    "sentence-transformers/"
-    "paraphrase-multilingual-MiniLM-L12-v2"
-)
+MODEL_NAME = "sentence-transformers/" "paraphrase-multilingual-MiniLM-L12-v2"
 
 
 def load_embedding_model() -> SentenceTransformer:
@@ -27,6 +24,28 @@ def embed_texts(texts: list[str], model: SentenceTransformer):
         show_progress_bar=False,
     )
 
+def embed_chunks(chunks: list[dict], model: SentenceTransformer) -> list[dict]:
+    """
+    Add an embedding to each chunk.
+    """
+
+    if not chunks:
+        return []
+
+    texts = [
+        chunk["text"]
+        for chunk in chunks
+    ]
+
+    embeddings = embed_texts(texts=texts, model=model)
+
+    return [
+        {
+            **chunk,
+            "embedding": embedding,
+        }
+        for chunk, embedding in zip(chunks, embeddings)
+    ]
 
 if __name__ == "__main__":
 
