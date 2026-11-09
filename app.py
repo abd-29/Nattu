@@ -1,261 +1,136 @@
 import streamlit as st
 
-from config import DATA_DIR, ASSETS_DIR
+from config import DATA_DIR
+from src.auth.user_repository import authenticate_user
 from src.embeddings.embedding_model import load_embedding_model
 from src.indexing.index_state import load_index_state
 from src.retrieval.hybrid_search import answer_query
 from src.retrieval.reranker import load_reranker
 
-LOGO = ASSETS_DIR / "logo.png"
 
-st.set_page_config(
-    page_title="Nova Assistant",
-    page_icon="💬",
-    layout="wide",
-)
+st.set_page_config(page_title="Nova Assistant", page_icon="💬", layout="centered")
 
 
 @st.cache_resource
 def load_models():
-    """
-    Load retrieval models once.
-    """
-
+    """Load embedding and reranking models once."""
     embedding_model = load_embedding_model()
     reranker = load_reranker()
-
     return embedding_model, reranker
 
 
 @st.cache_resource
 def load_state():
-    """
-    Load the document index state.
-    """
-
-    index_state_path = (
-        DATA_DIR
-        / "processed"
-        / "index_state.json"
-    )
-
+    """Load the document index state."""
+    index_state_path = DATA_DIR / "processed" / "index_state.json"
     return load_index_state(index_state_path)
 
 
-def display_sources(results: list[dict]):
-    """
-    Display the sources used for an answer.
-    """
+def login_page():
+    """Display the authentication page."""
+    st.title("Nova Assistant")
+    st.caption("Assistant documentaire interne de NovaTech Industries")
 
-    if not results:
-        return
+    with st.form("login_form"):
+        username = st.text_input("Nom d'utilisateur")
+        password = st.text_input("Mot de passe", type="password")
+        submitted = st.form_submit_button("Se connecter", use_container_width=True)
 
-    with st.expander(
-        "Sources utilisées"
-    ):
+    if submitted:
+        user = authenticate_user(username, password)
 
-        for index, result in enumerate(
-            results,
-            start=1,
-        ):
+        if user is None:
+            st.error("Nom d'utilisateur ou mot de passe incorrect.")
+            return
 
-            st.markdown(
-                f"""
-**Source {index} — {result["document_id"]}**
-
-Version : `{result["version"]}`  
-Source : `{result["source"]}`
-"""
-            )
-
-            if (
-                result.get("start_page")
-                is not None
-            ):
-
-                st.caption(
-                    f"Page "
-                    f"{result['start_page']}"
-                )
-
-            st.divider()
+        st.session_state.user = user
+        st.session_state.messages = []
+        st.rerun()
 
 
-def main():
-    """
-    Run the NovaTech RAG interface.
-    """
+def logout():
+    """Clear the authenticated session."""
+    st.session_state.pop("user", None)
+    st.session_state.pop("messages", None)
+    st.rerun()
 
-    embedding_model, reranker = (
-        load_models()
-    )
 
-    index_state = load_state()
+def chat_page():
+    """Display the authenticated chat interface."""
+    user = st.session_state.user
+
+    with st.sidebar:
+        st.image("assets/logo.png", width=180)
+        st.title("NovaTech")
+        st.success(f"Connecté : {user.username}")
+        st.write(f"Département : **{user.department}**")
+        st.write(f"Rôle : **{user.role}**")
+
+        if st.button("Se déconnecter", use_container_width=True):
+            logout()
+
+    st.title("Nova Assistant")
+    st.caption("Posez une question sur la documentation interne de NovaTech.")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    # Two-column layout.
-    logo_column, chat_column = st.columns(
-        [1, 2],
-        gap="large",
-    )
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
-    # --------------------------------------------------
-    # Left side: branding
-    # --------------------------------------------------
-
-    with logo_column:
-
-        st.write("")
-        st.write("")
-        st.write("")
-
-        st.image(
-            str(LOGO),
-            use_container_width=True,
-        )
-
-        st.markdown(
-            """
-            <div style="
-                text-align: center;
-                margin-top: 20px;
-            ">
-                <h3>NovaTech Industries</h3>
-                <p style="
-                    color: gray;
-                    font-size: 14px;
-                ">
-                    Intelligent knowledge assistant
-                </p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-    # --------------------------------------------------
-    # Right side: assistant
-    # --------------------------------------------------
-
-    with chat_column:
-
-        st.title(
-            "Nova Assistant"
-        )
-
-        st.caption(
-            "Assistant documentaire interne"
-        )
-
-        st.divider()
-
-        # Display conversation history.
-        for message in (
-            st.session_state.messages
-        ):
-
-            with st.chat_message(
-                message["role"]
-            ):
-
-                st.markdown(
-                    message["content"]
-                )
-
-                if (
-                    message["role"]
-                    == "assistant"
-                ):
-
-                    display_sources(
-                        message.get(
-                            "results",
-                            [],
+            if message.get("results"):
+                with st.expander("Sources"):
+                    for result in message["results"]:
+                        st.write(
+                            f"**{result['document_id']}** "
+                            f"- version {result['version']}"
                         )
-                    )
 
-        query = st.chat_input(
-            "Posez votre question à Nova..."
-        )
+    query = st.chat_input("Posez votre question...")
 
-        if not query:
-            return
+    if not query:
+        return
 
-        # User message.
-        st.session_state.messages.append(
-            {
-                "role": "user",
-                "content": query,
-            }
-        )
+    st.session_state.messages.append({
+        "role": "user",
+        "content": query,
+    })
 
-        with st.chat_message(
-            "user"
-        ):
+    with st.chat_message("user"):
+        st.markdown(query)
 
-            st.markdown(
-                query
+    embedding_model, reranker = load_models()
+    index_state = load_state()
+
+    with st.chat_message("assistant"):
+        with st.spinner("Recherche en cours..."):
+            result = answer_query(
+                query=query,
+                embedding_model=embedding_model,
+                reranker=reranker,
+                index_state=index_state,
+                user=user,
             )
 
-        # Assistant response.
-        with st.chat_message(
-            "assistant"
-        ):
+        st.markdown(result["answer"])
 
-            with st.spinner(
-                "Nova réfléchit..."
-            ):
-
-                try:
-
-                    result = answer_query(
-                        query=query,
-                        embedding_model=embedding_model,
-                        reranker=reranker,
-                        index_state=index_state,
+        if result["results"]:
+            with st.expander("Sources"):
+                for document in result["results"]:
+                    st.write(
+                        f"**{document['document_id']}** "
+                        f"- version {document['version']}"
                     )
 
-                    answer = result[
-                        "answer"
-                    ]
-
-                    st.markdown(
-                        answer
-                    )
-
-                    display_sources(
-                        result.get(
-                            "results",
-                            [],
-                        )
-                    )
-
-                    st.session_state.messages.append(
-                        {
-                            "role": "assistant",
-                            "content": answer,
-                            "status": result.get(
-                                "status"
-                            ),
-                            "results": result.get(
-                                "results",
-                                [],
-                            ),
-                        }
-                    )
-
-                except Exception as error:
-
-                    st.error(
-                        "Une erreur est survenue "
-                        "pendant le traitement."
-                    )
-
-                    st.exception(
-                        error
-                    )
+    st.session_state.messages.append({
+        "role": "assistant",
+        "content": result["answer"],
+        "results": result["results"],
+    })
 
 
-if __name__ == "__main__":
-    main()
+if "user" not in st.session_state:
+    login_page()
+else:
+    chat_page()

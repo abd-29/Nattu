@@ -15,14 +15,7 @@ def embed_texts(texts: list[str], model: SentenceTransformer):
     """
     Embed multiple texts in a single batch.
     """
-
-    return model.encode(
-        texts,
-        batch_size=32,
-        convert_to_numpy=True,
-        normalize_embeddings=True,
-        show_progress_bar=False,
-    )
+    return model.encode(texts, batch_size=32, convert_to_numpy=True, normalize_embeddings=True, show_progress_bar=False)
 
 def embed_chunks(chunks: list[dict], model: SentenceTransformer) -> list[dict]:
     """
@@ -32,20 +25,12 @@ def embed_chunks(chunks: list[dict], model: SentenceTransformer) -> list[dict]:
     if not chunks:
         return []
 
-    texts = [
-        chunk["text"]
-        for chunk in chunks
-    ]
+    texts = [chunk["text"] for chunk in chunks]
 
     embeddings = embed_texts(texts=texts, model=model)
 
-    return [
-        {
-            **chunk,
-            "embedding": embedding,
-        }
-        for chunk, embedding in zip(chunks, embeddings)
-    ]
+    return [ { **chunk, "embedding": embedding} for chunk, embedding in zip(chunks, embeddings)]
+
 
 if __name__ == "__main__":
 

@@ -2,13 +2,7 @@ import psycopg
 
 from pgvector.psycopg import register_vector
 
-from config import (
-    POSTGRES_DB,
-    POSTGRES_HOST,
-    POSTGRES_PASSWORD,
-    POSTGRES_PORT,
-    POSTGRES_USER,
-)
+from config import POSTGRES_DB, POSTGRES_HOST, POSTGRES_PASSWORD, POSTGRES_PORT, POSTGRES_USER
 
 
 def get_connection():
@@ -50,11 +44,7 @@ if __name__ == "__main__":
 
             result = cursor.fetchone()
 
-            print("pgvector:",
-                result[0]
-                if result
-                else "not installed",
-            )
+            print("pgvector:", result[0] if result else "not installed")
 
             cursor.execute(
                 """
@@ -67,5 +57,4 @@ if __name__ == "__main__":
             )
 
             table_exists = cursor.fetchone()[0]
-
             print("document_chunks:", table_exists)

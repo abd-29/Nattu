@@ -19,19 +19,14 @@ def compute_document_content_hash(units: list[dict]) -> str:
     normalized_parts = []
 
     for unit in units:
-
-        normalized_text = " ".join(
-            unit["text"].split()
-        ).lower()
+        normalized_text = " ".join(unit["text"].split()).lower()
 
         if normalized_text:
             normalized_parts.append(normalized_text)
 
     normalized_document = "\n".join(normalized_parts)
 
-    return hashlib.sha256(
-        normalized_document.encode("utf-8")
-    ).hexdigest()
+    return hashlib.sha256(normalized_document.encode("utf-8")).hexdigest()
 
 
 def build_document_state(path: Path, raw_data_dir: Path) -> dict:
@@ -67,31 +62,21 @@ def resolve_consistency(states: dict[str, dict]) -> dict[str, dict]:
     """
 
     resolved_states = {
-        source: {
-            **state,
-        }
-        for source, state in states.items()
+        source: {**state,} for source, state in states.items()
     }
 
     identities = defaultdict(list)
 
     for source, state in resolved_states.items():
 
-        identity = (
-            state["document_id"],
-            state["version"],
-        )
-
+        identity = (state["document_id"], state["version"])
         identities[identity].append(source)
 
     for sources in identities.values():
-
         hashes = defaultdict(list)
 
         for source in sources:
-
             content_hash = resolved_states[source]["content_hash"]
-
             hashes[content_hash].append(source)
 
         # Same identity but different content.
@@ -103,10 +88,7 @@ def resolve_consistency(states: dict[str, dict]) -> dict[str, dict]:
 
         # Same identity and same content:
         # keep only one physical copy.
-        sorted_sources = sorted(
-            sources
-        )
-
+        sorted_sources = sorted(sources)
         canonical_source = sorted_sources[0]
 
         for source in sorted_sources:
@@ -131,15 +113,8 @@ def build_full_index_state(raw_data_dir: Path) -> dict[str, dict]:
     states = {}
 
     for path in documents:
-
         source = path.relative_to(raw_data_dir).as_posix()
-
-        states[source] = (
-            build_document_state(
-                path=path,
-                raw_data_dir=raw_data_dir,
-            )
-        )
+        states[source] = build_document_state(path=path, raw_data_dir=raw_data_dir)
 
     return resolve_consistency(states)
 
@@ -153,12 +128,7 @@ def save_index_state(state: dict[str, dict], path: Path) -> None:
 
     with path.open("w", encoding="utf-8") as file:
 
-        json.dump(
-            state,
-            file,
-            indent=2,
-            ensure_ascii=False,
-        )
+        json.dump(state, file, indent=2, ensure_ascii=False)
 
 
 def load_index_state(path: Path) -> dict[str, dict]:

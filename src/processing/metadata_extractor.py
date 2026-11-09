@@ -1,5 +1,6 @@
 import re
 from datetime import datetime
+from pathlib import Path
 
 from config import DATA_DIR, FRENCH_MONTHS
 
@@ -19,30 +20,17 @@ def clean_line(line: str) -> str:
     return line.strip()
 
 
-def extract_field(
-    lines: list[str],
-    labels: list[str],
-) -> str | None:
+def extract_field(lines: list[str], labels: list[str]) -> str | None:
     """
     Extract a metadata field from document lines.
     """
 
     for label in labels:
-
-        pattern = re.compile(
-            rf"^{re.escape(label)}\s*:\s*(.+)$",
-            re.IGNORECASE,
-        )
+        pattern = re.compile(rf"^{re.escape(label)}\s*:\s*(.+)$", re.IGNORECASE)
 
         for line in lines:
-
-            cleaned_line = clean_line(
-                line
-            )
-
-            match = pattern.match(
-                cleaned_line
-            )
+            cleaned_line = clean_line(line)
+            match = pattern.match(cleaned_line)
 
             if match:
                 return match.group(1).strip()
@@ -50,9 +38,7 @@ def extract_field(
     return None
 
 
-def normalize_department(
-    value: str | None,
-) -> str | None:
+def normalize_department(value: str | None) -> str | None:
     """
     Normalize department names.
     """
@@ -67,15 +53,10 @@ def normalize_department(
         "ressources humaines": "hr",
     }
 
-    return mapping.get(
-        value.lower(),
-        value.lower(),
-    )
+    return mapping.get(value.lower(), value.lower())
 
 
-def normalize_status(
-    value: str | None,
-) -> str | None:
+def normalize_status(value: str | None) -> str | None:
     """
     Normalize document status.
     """
@@ -90,15 +71,10 @@ def normalize_status(
         "archivé": "archived",
     }
 
-    return mapping.get(
-        value.lower(),
-        value.lower(),
-    )
+    return mapping.get(value.lower(), value.lower())
 
 
-def normalize_language(
-    value: str | None,
-) -> str | None:
+def normalize_language(value: str | None) -> str | None:
     """
     Normalize document language.
     """
@@ -109,16 +85,12 @@ def normalize_language(
     return value.lower()
 
 
-def extract_header_identity(
-    line: str,
-) -> tuple[str | None, str]:
+def extract_header_identity(line: str) -> tuple[str | None, str]:
     """
     Extract document ID and title from the first line.
     """
 
-    cleaned_line = clean_line(
-        line
-    )
+    cleaned_line = clean_line(line)
 
     pattern = re.compile(
         r"^([A-Z0-9]+(?:-[A-Z0-9]+)+)"
@@ -126,9 +98,7 @@ def extract_header_identity(
         r"(.+)$"
     )
 
-    match = pattern.match(
-        cleaned_line
-    )
+    match = pattern.match(cleaned_line)
 
     if not match:
         return None, cleaned_line
@@ -150,23 +120,15 @@ def normalize_date(value: str | None) -> str | None:
     value = value.strip()
 
     try:
-        return datetime.strptime(
-            value,
-            "%Y-%m-%d",
-        ).date().isoformat()
-
+        return datetime.strptime(value, "%Y-%m-%d",).date().isoformat()
     except ValueError:
         pass
 
     parts = value.lower().split()
 
     if len(parts) == 3:
-
         day, month, year = parts
-
-        month_number = FRENCH_MONTHS.get(
-            month
-        )
+        month_number = FRENCH_MONTHS.get(month)
 
         if month_number:
 
@@ -179,11 +141,16 @@ def normalize_date(value: str | None) -> str | None:
     return value
 
 
-from pathlib import Path
+def normalize_classification(value: str | None) -> str | None:
+    """
+    Normalize document classification.
+    """
+    if value is None:
+        return None
 
-def detect_language(
-    text: str,
-) -> str | None:
+    return value.lower()
+
+def detect_language(text: str) -> str | None:
     """
     Detect document language from text.
     """
@@ -198,9 +165,7 @@ def detect_language(
         return None
 
 
-def infer_status_from_text(
-    text: str,
-) -> str | None:
+def infer_status_from_text(text: str) -> str | None:
     """
     Infer document status from explicit textual evidence.
     """
@@ -245,107 +210,51 @@ def extract_metadata(
     if not lines:
         return {}
 
-    header_document_id, title = (
-        extract_header_identity(
-            lines[0]
-        )
-    )
-
-    document_id = extract_field(
-        lines,
-        ["Référence"],
-    )
+    header_document_id, title = extract_header_identity(lines[0])
+    document_id = extract_field(lines,["Référence"])
 
     if document_id is None:
         document_id = header_document_id
 
-    version = extract_field(
-        lines,
-        ["Version"],
-    )
-
-    document_date = extract_field(
-        lines,
-        [
-            "Date d'application",
-            "Date",
-        ],
-    )
-
-    department = extract_field(
-        lines,
-        ["Département"],
-    )
-
-    classification = extract_field(
-        lines,
-        ["Classification"],
-    )
-
-    status = extract_field(
-        lines,
-        ["Statut"],
-    )
+    version = extract_field(lines,["Version"],)
+    document_date = extract_field(lines,[ "Date d'application", "Date"])
+    department = extract_field(lines, ["Département"])
+    classification = extract_field(lines,["Classification"],)
+    status = extract_field(lines,["Statut"])
 
     if status is None:
-        status = infer_status_from_text(
-            text
-        )
+        status = infer_status_from_text(text)
 
-    language = extract_field(
-        lines,
-        ["Langue"],
-    )
+    language = extract_field(lines,["Langue"])
 
     if language is None:
-        language = detect_language(
-            text
-        )
+        language = detect_language(text)
 
     source = None
     filename = None
     extension = None
 
     if path is not None:
-
         filename = path.name
         extension = path.suffix.lower()
 
         if raw_data_dir is not None:
-
-            relative_path = path.relative_to(
-                raw_data_dir
-            )
+            relative_path = path.relative_to(raw_data_dir)
 
             source = relative_path.as_posix()
 
             if department is None:
-
-                department = (
-                    relative_path.parts[0]
-                )
+                department = relative_path.parts[0]
 
     return {
         "document_id": document_id,
         "title": title,
         "version": version,
-        "department": normalize_department(
-            department
-        ),
-        "classification": (
-            classification.lower()
-            if classification
-            else None
-        ),
-        "status": normalize_status(
-            status
-        ),
-        "language": normalize_language(
-            language
-        ),
-        "date": normalize_date(
-            document_date
-        ),
+        "department": normalize_department(department),
+        "classification": normalize_classification(classification),
+        "status": normalize_status(status),
+        "language": normalize_language(language),
+        "date": normalize_date(document_date),
         "source": source,
         "filename": filename,
         "extension": extension,

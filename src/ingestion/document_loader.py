@@ -9,13 +9,7 @@ from docx.text.paragraph import Paragraph
 
 from rapidocr import RapidOCR
 
-
-SUPPORTED_EXTENSIONS = {
-    ".pdf",
-    ".docx",
-    ".md",
-    ".txt",
-}
+SUPPORTED_EXTENSIONS = {".pdf", ".docx", ".md", ".txt"}
 
 MIN_TEXT_LENGTH = 20
 
@@ -65,7 +59,6 @@ def page_needs_ocr(page, text: str) -> bool:
     has_images = bool(page.get_images(full=True))
 
     return text_is_empty and has_images
-
 
 
 def extract_page_with_ocr(page) -> str:

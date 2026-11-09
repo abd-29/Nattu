@@ -17,13 +17,7 @@ def embed_chunks(chunks: list[dict], model: SentenceTransformer) -> list[dict]:
     embedded_chunks = []
 
     for chunk, embedding in zip(chunks, embeddings,):
-
-        embedded_chunks.append(
-            {
-                **chunk,
-                "embedding": embedding,
-            }
-        )
+        embedded_chunks.append({**chunk, "embedding": embedding})
 
     return embedded_chunks
 

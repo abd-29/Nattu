@@ -19,11 +19,7 @@ def run_indexing_pipeline(raw_data_dir: Path, manifest_path: Path, index_state_p
     changes = compare_manifests(previous=previous_manifest, current=current_manifest)
     previous_state = load_index_state(index_state_path)
 
-    has_changes = (
-        changes["added"]
-        or changes["modified"]
-        or changes["deleted"]
-    )
+    has_changes = changes["added"] or changes["modified"] or changes["deleted"]
 
     # only when physical files changed.
     if has_changes:
@@ -120,7 +116,6 @@ def run_indexing_pipeline(raw_data_dir: Path, manifest_path: Path, index_state_p
         )
 
         if became_non_indexable:
-
             sources_to_delete.add(source)
 
     # or conflicting documents.

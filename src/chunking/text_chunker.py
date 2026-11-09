@@ -136,12 +136,7 @@ def chunk_units(units: list[dict], chunk_size: int = 500, overlap_paragraphs: in
 
 if __name__ == "__main__":
 
-    path = (
-            DATA_DIR
-            / "raw"
-            / "quality"
-            / "QUA-INC-001_v3_2026.pdf"
-    )
+    path =  DATA_DIR  / "raw" / "quality" / "QUA-INC-001_v3_2026.pdf"
 
     units = load_document(path)
     units = clean_units(units)
