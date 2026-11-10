@@ -1,6 +1,6 @@
 # Nattu RAG Assistant
 
-Enterprise RAG assistant that allows Nattu Industries employees (Vir) to query internal documentation in natural language, with authentication, access control, hybrid retrieval, reranking, and source-grounded answers.
+Enterprise RAG assistant that allows Nattu Industries employees to query internal documentation in natural language, with authentication, access control, hybrid retrieval, reranking, and source-grounded answers.
 
 ## Objective
 
@@ -8,19 +8,19 @@ This project simulates a realistic enterprise RAG use case.
 
 The system can:
 
-- ingest and index internal documents;
-- extract document metadata;
-- detect duplicates and version conflicts;
-- split documents into chunks;
-- generate and store embeddings;
-- perform hybrid vector and lexical retrieval;
-- merge rankings using Reciprocal Rank Fusion;
-- rerank results with a Cross-Encoder;
-- manage document versions;
-- detect ambiguous or insufficient answers;
-- authenticate users;
-- filter documents according to user permissions;
-- generate source-grounded answers with an LLM;
+- ingest and index internal documents
+- extract document metadata
+- detect duplicates and version conflicts
+- split documents into chunks
+- generate and store embeddings
+- perform hybrid vector and lexical retrieval
+- merge rankings using Reciprocal Rank Fusion
+- rerank results with a Cross-Encoder
+- manage document versions
+- detect ambiguous or insufficient answers
+- authenticate users
+- filter documents according to user permissions
+- generate source-grounded answers with an LLM
 - expose the system through Streamlit and FastAPI.
 
 ---
@@ -78,8 +78,8 @@ flowchart TD
 
 Each user has:
 
-- a department;
-- a role;
+- a department
+- a role
 - an active/inactive status.
 
 Documents also contain a department and a classification level.
@@ -206,9 +206,9 @@ The indexing pipeline handles:
 
 The system can also detect:
 
-- duplicate documents;
-- conflicting documents;
-- explicitly requested versions;
+- duplicate documents
+- conflicting documents
+- explicitly requested versions
 - conflicts involving the latest document version.
 
 ---
@@ -299,11 +299,11 @@ A Streamlit interface is also available for direct interaction with the chatbot.
 
 It includes:
 
-- user login;
-- role and department display;
-- conversation history;
-- RAG answers;
-- source display;
+- user login
+- role and department display
+- conversation history
+- RAG answers
+- source display
 - logout.
 
 Run the application with:
@@ -362,7 +362,7 @@ poetry run streamlit run app.py
 ### Clone the repository
 
 ```bash
-git clone <repository-url> Nattu
+git clone https://github.com/abd-29/Nattu.git 
 cd Nattu
 ```
 
@@ -433,9 +433,9 @@ poetry run pytest
 
 The test suite focuses mainly on critical components:
 
-- password hashing and verification;
-- access control rules;
-- Reciprocal Rank Fusion;
+- password hashing and verification
+- access control rules
+- Reciprocal Rank Fusion
 - document version extraction.
 
 ---
