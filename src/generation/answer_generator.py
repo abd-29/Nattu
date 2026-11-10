@@ -13,12 +13,7 @@ def call_llm(prompt: str) -> str:
     """Call a free model through OpenRouter."""
     response = client.chat.completions.create(
         model="openrouter/free",
-        messages=[
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ],
+        messages=[{"role": "user", "content": prompt}],
     )
     return response.choices[0].message.content
 
