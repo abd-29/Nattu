@@ -9,8 +9,8 @@
     "status": "obsolete",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "28b3623663b26f7a316e33ac9d80578c971c5b9db0caca8551fb51254518ab92",
-    "size_bytes": 30126,
+    "sha256": "5e23d956078e394542d70310230b30e8bbe7acf618016a52f4405d61d172882f",
+    "size_bytes": 29537,
     "tags": [
       "versioned"
     ]
@@ -25,8 +25,8 @@
     "status": "obsolete",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "04c1d8c1d8602735ec905d6d52c4f381ee20f666e305ed3ff9a5b6f29daab190",
-    "size_bytes": 30130,
+    "sha256": "cee9f11613188e540a7399ad74e9174b12cffc12ea90ca244f99b8a7d3e6b2f0",
+    "size_bytes": 29541,
     "tags": [
       "versioned"
     ]
@@ -41,8 +41,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d",
-    "size_bytes": 31269,
+    "sha256": "06e0e7b3ddbed916ac0b5198840f51b0f30a207f4fdb956c3f24dfdd9dc6ea08",
+    "size_bytes": 30463,
     "tags": [
       "versioned"
     ]
@@ -57,8 +57,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "de736b2b32ffbebffdc5c6f08c6b4a7030316adeef1798ad9e037e114da090d9",
-    "size_bytes": 30158,
+    "sha256": "89009e318caf63be1fc1385ef71ea1a782c2a17db8bddfeae24a77571ff2d9f8",
+    "size_bytes": 29563,
     "tags": []
   },
   {
@@ -71,8 +71,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "2e777b6b1ad5df726c725860f1f8dd3f79fa3d7374f1aab4824b770ee5a9b340",
-    "size_bytes": 30129,
+    "sha256": "b6e998967761fb04c7917342970416d5213cb0669422b6bc67e6e9d90a8198f6",
+    "size_bytes": 29542,
     "tags": []
   },
   {
@@ -85,8 +85,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "80285573369ec8f173435357f9aa85e4d1d79e13c0cc20ee7edc401abdd3a100",
-    "size_bytes": 37822,
+    "sha256": "1894bb0cc0951867c4ee4ec6479a3aa24ec1bf7b661fe078a977e74f541acc2b",
+    "size_bytes": 37818,
     "tags": []
   },
   {
@@ -99,8 +99,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "dc813c2c30d14f266e94306693d76dcae69f32a1ac664b75fae9377add49745b",
-    "size_bytes": 991,
+    "sha256": "4f220ba72ac6a34c9a91ed1dc23e440a7ee40ddf18ffe760a672ceb3127cf13d",
+    "size_bytes": 988,
     "tags": []
   },
   {
@@ -113,8 +113,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "007de7a536117634095ff81014b0ec9841c1facca403ea5c00bddcd694b0ac83",
-    "size_bytes": 30143,
+    "sha256": "42e4378fd90a03d1c8ee8e375836ddcf28cccdec30a3f3684f86b95837f48342",
+    "size_bytes": 29554,
     "tags": []
   },
   {
@@ -127,8 +127,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "dc2e47ca28b333845800b25a91e8d2501cb5f183f6d5bc55a41cffc6250d6bf9",
-    "size_bytes": 30248,
+    "sha256": "22b24ff3989b889fc39752837c291863b1887edff13b1212c514808eb020c4a2",
+    "size_bytes": 29658,
     "tags": []
   },
   {
@@ -141,8 +141,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "68ee1156ddf8f5af976bfdf33f5460cfcac71e1e59bfaf48d367b55d8cc8a13f",
-    "size_bytes": 37822,
+    "sha256": "dfe98dccf8a6e3c419e3fc6e591f8dce4ea8864c43471c0a2c47339c7ec91609",
+    "size_bytes": 37817,
     "tags": []
   },
   {
@@ -155,8 +155,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "8b402b6603345d2efbb31e5ee213b7de566e55a66777dbc543a47bde510e3ad9",
-    "size_bytes": 999,
+    "sha256": "ed071e0faefda85526b70c93fd567bcf7b714b60e8ae70cbd4ff558e5cd0ffdd",
+    "size_bytes": 996,
     "tags": []
   },
   {
@@ -169,8 +169,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "d1ec262482da246fa76ee65541dd049d6217c34788acde9f595f6b46cbb1b7f1",
-    "size_bytes": 30114,
+    "sha256": "e5a24f3d023ba61cc09435302ef8113808d10af8424f240197bd219ef67bf169",
+    "size_bytes": 29529,
     "tags": []
   },
   {
@@ -183,8 +183,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "7cb47b3cfa5442fdf2b4ca6e07f5d87664bb76bc066c0c1751048cf0179a5ff3",
-    "size_bytes": 30129,
+    "sha256": "74c35b3391d5c686163fdb793379fd59cdb7a3e464099b712a1a96708e67371b",
+    "size_bytes": 29543,
     "tags": []
   },
   {
@@ -197,8 +197,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "eb9ee7127387b1181e6da699527456a58fe8f2a36b746da6bc8a1b39a241e959",
-    "size_bytes": 37835,
+    "sha256": "9332c34a64717815b2ab22dcf7245e045239345d3e2c09b19bb47a7ea8a42a82",
+    "size_bytes": 37830,
     "tags": []
   },
   {
@@ -211,8 +211,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "12e5912dbc955c0a08473f48e454db0daa01368b57838ffbc6be9968f46d4b63",
-    "size_bytes": 996,
+    "sha256": "18307a5cc2b6b12a9682035e3367b4ab10577f139ab5d90f7538f89fd76f3cf1",
+    "size_bytes": 993,
     "tags": []
   },
   {
@@ -225,8 +225,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "1d4e407f72e7fcf32be5edbbfc6f5a9c653007651719be2005a1225068b2f2c5",
-    "size_bytes": 31121,
+    "sha256": "36c75fa2a0fdc79a31d9768f1ac0704329959afd4e4cd6c40d9b62db9ef9d5ad",
+    "size_bytes": 30351,
     "tags": []
   },
   {
@@ -239,8 +239,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "4385337488bbeeb781c5a4181c4954b6571470b239e8bfce363b6aad174ac13a",
-    "size_bytes": 30145,
+    "sha256": "f9e95953c9d9ba9945ea5020ee495ae228ebfdc2cb2a123a932723b897cf0a28",
+    "size_bytes": 29553,
     "tags": []
   },
   {
@@ -263,15 +263,15 @@
   {
     "relative_path": "data/raw/quality/QUA-GLOSSARY-017_1-3.md",
     "document_id": "QUA-GLOSSARY-017",
-    "title": "Glossaire qualité NovaTech",
+    "title": "Glossaire qualité Nattu",
     "version": "1.3",
     "department": "quality",
     "classification": "Internal",
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "e3646c27d1ce9d240873bcdb4600bd3989fd8e25e6dcbbacf217a31759fb2641",
-    "size_bytes": 980,
+    "sha256": "4ad057f5734aa555e1860312e61d3afa347a9c4b56ad2836b22a225e7d9043d3",
+    "size_bytes": 974,
     "tags": []
   },
   {
@@ -284,8 +284,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "386d7c5820eabe4ea29896fa41a660001a3c3f84233163d155cc5ea4399f8903",
-    "size_bytes": 30147,
+    "sha256": "96b79d9c496d9c03567dfdf9a35efdce564f0d8db4f66d9f2221949b5e7677cf",
+    "size_bytes": 29553,
     "tags": []
   },
   {
@@ -298,8 +298,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "fbca1f9a96abc26efc2f65af4848a2258f7694f32d83e8f5540b6d124e9cc857",
-    "size_bytes": 30771,
+    "sha256": "d6db15577123574b796dec8b0c833e71083cad3a5bfd2da5e24e14b8c8dfdd17",
+    "size_bytes": 30068,
     "tags": []
   },
   {
@@ -312,8 +312,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "d3c51f8559be8a1061f85d785562a3cba8f57634fb23bd959a9e1a5aa7a1c99f",
-    "size_bytes": 37850,
+    "sha256": "3cc7114dcdf09aac3de8981879188d76d7035be4d19cacbce1bb0502a6c0a596",
+    "size_bytes": 37845,
     "tags": []
   },
   {
@@ -326,8 +326,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "d902dad901083fae56efc0ed8a862bbc30bcd98346f5e93000e7df0f3f655394",
-    "size_bytes": 975,
+    "sha256": "88985c66ca2b89c2965060495b1f017964b264ff5af72e4f633454fb5f5917a5",
+    "size_bytes": 972,
     "tags": []
   },
   {
@@ -340,8 +340,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "766ac2651e96f7c2c9ccae7ce256b46fc41f7bcf5033aac4c181fdda71c40e4f",
-    "size_bytes": 30415,
+    "sha256": "fb33fe65ce5cd8cf771c79eae390403f89a415f8d333e0fc6c700d5684e4b456",
+    "size_bytes": 29771,
     "tags": []
   },
   {
@@ -354,8 +354,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "0e0302dff2d7e0a775f25ac1c7d6e169dc57325a6dd3ecd293928c475c4a2b6c",
-    "size_bytes": 30348,
+    "sha256": "9ad5edbfb1180f6193d42f3443726df4b818957a455fbea948afb7ab9d4bc1ec",
+    "size_bytes": 29738,
     "tags": []
   },
   {
@@ -368,8 +368,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "c0080fe3862ab6eeacd7c813b56c2fe2017b931bf92b994c0fafcc3bbbdc974d",
-    "size_bytes": 31269,
+    "sha256": "06e0e7b3ddbed916ac0b5198840f51b0f30a207f4fdb956c3f24dfdd9dc6ea08",
+    "size_bytes": 30463,
     "tags": [
       "exact_duplicate",
       "reference_copy"
@@ -385,8 +385,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "60787e2a3de0cec57c053e02b1efb1fd938b6b84834766658d5fe5cb50375542",
-    "size_bytes": 30495,
+    "sha256": "00eebb3e330fd9c7304f720f5c617114e9b1518d655d5b88e7f6e3ac72185bb0",
+    "size_bytes": 29819,
     "tags": []
   },
   {
@@ -399,8 +399,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "ccec5171e2dab791c0b064325a6466b4c5fc021f84a2858531bf4fd00b6f34f2",
-    "size_bytes": 30092,
+    "sha256": "adcaf6ae2bb22e3888042d6f4b8599749e16d8d6345826d7f7160dec4a1791e9",
+    "size_bytes": 29460,
     "tags": []
   },
   {
@@ -413,8 +413,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "4e7c6d3e7f76ae343da65e0bb25346117161bb750ecab1c65105b325db245f78",
-    "size_bytes": 37770,
+    "sha256": "ba3a10e96497b6830c86d7c05c5e7c098a1bdc88e5c0559d0d384be8cbfba705",
+    "size_bytes": 37768,
     "tags": []
   },
   {
@@ -441,8 +441,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "99880443532b90028ddbb9d478d6e33838fe0fbb49a813dfd63f457c49868064",
-    "size_bytes": 29757,
+    "sha256": "1ecbe69e2871d78b4f987647edd436677e59a823227d45fdec28732f09a7c683",
+    "size_bytes": 29192,
     "tags": []
   },
   {
@@ -455,8 +455,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "7de2ca257949a363e39682982daa9419b56ed8be89dc3ada995bc3f3275dc01c",
-    "size_bytes": 29734,
+    "sha256": "f66716da10555c3604b0dc0f619c8723fcd32a3671d493e101ba985c30b0c32c",
+    "size_bytes": 29174,
     "tags": []
   },
   {
@@ -469,8 +469,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "29fb2cb92b9e0a71a06455c39f1716eee05721282b0099db8ed86c9ad06c09f3",
-    "size_bytes": 30494,
+    "sha256": "aa04edc410ad51291840adab2998c5200a9f0402f49ef95bb70049e955e5045e",
+    "size_bytes": 29817,
     "tags": []
   },
   {
@@ -483,8 +483,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "7f3ca062a5d8fb367e1313747291929d95d941c39e20a3cb0f549637de022836",
-    "size_bytes": 30087,
+    "sha256": "5a542ccb08070ed9d650111654d336d5e6718318ce23e80998523939ef5ee851",
+    "size_bytes": 29456,
     "tags": []
   },
   {
@@ -497,8 +497,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "c8734807c88a674b5059b68c4efde090b6df5d2d83aabdfba67082a55eef56cf",
-    "size_bytes": 37769,
+    "sha256": "4d0496b59acefd430b07fd31829950f9d722f051e9339bcaf61302ef4a6cc422",
+    "size_bytes": 37767,
     "tags": []
   },
   {
@@ -525,8 +525,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "70382071953455ac77a409a6cb91be8a44d44424fd11565cc292a9276acb74b3",
-    "size_bytes": 29760,
+    "sha256": "61b7c34dc367002505c8afd8b5c06d7656fca79f70411e273168ddf57580dc28",
+    "size_bytes": 29194,
     "tags": []
   },
   {
@@ -539,8 +539,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "a81aa2a523ef3975efce91d425045adac6be18f0eeb0239a3d8aa299acf8aded",
-    "size_bytes": 29728,
+    "sha256": "02c855a719943e5706eb3fed2045546c47d0acbfa08cf29f74152defe9099499",
+    "size_bytes": 29169,
     "tags": []
   },
   {
@@ -553,8 +553,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "ce0b148fb063a8b282185537defe54c283d85e8362c6c3773d8bc64ac5466bf6",
-    "size_bytes": 30495,
+    "sha256": "eab4e6d72adcd47efbe5f67f5b81b606568c03f4aa01a0c3d033bf189013c2df",
+    "size_bytes": 29817,
     "tags": []
   },
   {
@@ -567,8 +567,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "0f08d33ba78aa319bf00c2033a83af662e22d1958dd9312242409abc9d9ee592",
-    "size_bytes": 30162,
+    "sha256": "5469d6a3afe2bd82ebb60ec6a40d4d39dbe0ebaa3f260c0202a55147d78001c6",
+    "size_bytes": 29529,
     "tags": []
   },
   {
@@ -581,8 +581,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "34c427928e99de27e6cd7b8102998dd4218bc51a6cf459a91d825f2ccef08092",
-    "size_bytes": 37769,
+    "sha256": "9dee4772393d3c72e4b57c163d691f3a8ca76c5fc7615c93d1438f33e74ccf92",
+    "size_bytes": 37767,
     "tags": []
   },
   {
@@ -609,8 +609,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "b0493b25e790f29b0bb1be89a34ce9c3ab00b5a179719c1ce28c596d8b565208",
-    "size_bytes": 29760,
+    "sha256": "9ec4f3836683d912be9e5ed821721b25667a4f1e9d680427146dfc312ed3079f",
+    "size_bytes": 29194,
     "tags": []
   },
   {
@@ -623,8 +623,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "d4f4a59494bffd73fdeceda824da05e6d16e374ac963c308786253e7cb8eaefe",
-    "size_bytes": 29733,
+    "sha256": "29d48bb6c3d696ab4cf57853618e26f2f6024bc5700875013b3504d98fe38079",
+    "size_bytes": 29172,
     "tags": []
   },
   {
@@ -665,8 +665,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "3407091f169e9d455b36a2d67b6c35fcf3168c245fb3eca256c52bb22e306144",
-    "size_bytes": 30141,
+    "sha256": "81b5f4d3d593ed4463e6ca4c9dcdb76f071a445877abd0495628e4083615b367",
+    "size_bytes": 29498,
     "tags": []
   },
   {
@@ -679,8 +679,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "0aeebfa60696674ab04c8c37f5213002e10577872b8f382b7237cc0e17fe003f",
-    "size_bytes": 29757,
+    "sha256": "5ef876eabe94e88e3e4527265eba0b41a9bab0526344620d97f7da50eb75542c",
+    "size_bytes": 29192,
     "tags": []
   },
   {
@@ -693,8 +693,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "d32a1784dffe30f23d2aae3c3ecb673d0e688001b0a785c3227d5ab90daae1a7",
-    "size_bytes": 29775,
+    "sha256": "d038eaf1dc573541b6cd724b077395af9e1a86b33d4a84548ddd4a637a077e2b",
+    "size_bytes": 29206,
     "tags": []
   },
   {
@@ -707,8 +707,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "232b5ff0e87919f38cc2e604e536a820f981dc47e8ef04e7ff2b4bad1b076707",
-    "size_bytes": 29894,
+    "sha256": "70373730591e7c066e2a470d9f936532f1e019e05c938cf75c80111072d79368",
+    "size_bytes": 29325,
     "tags": []
   },
   {
@@ -721,8 +721,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "1ec61304b425599eac7e9502780996431c0f758f9d20355707c40440f3d2722e",
-    "size_bytes": 30375,
+    "sha256": "12ed2b90a59f88a2de3c7e3c09c7e3b333064a9c550881533ad3db3855c8a92a",
+    "size_bytes": 29702,
     "tags": []
   },
   {
@@ -735,8 +735,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "5a0c933bee7c0fcfa6259c333d3f28b05fc45d3e08f6eafa16a9f9bf0e653324",
-    "size_bytes": 29761,
+    "sha256": "58c591dbcf5f43fe425b6a1640f4ff0dcd562a94fc07856e2d6a9486cbdd5559",
+    "size_bytes": 29194,
     "tags": []
   },
   {
@@ -749,8 +749,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "6734086a0b19b55b6d9fa28e30a0085900d4461488429934e83d2da8cf299148",
-    "size_bytes": 29576,
+    "sha256": "df73aeaab16d71627e3ef0331cf94f0da6c083e564753ff0883ec3978f932402",
+    "size_bytes": 29029,
     "tags": [
       "english_source"
     ]
@@ -765,8 +765,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "07433486bcaa801139a40dfcc209857ef6fb18da5399e493dcc44590ad535775",
-    "size_bytes": 29414,
+    "sha256": "15d76fa20747e098de6e1ad7708f82b224b1d494d8ed2e43bfcf5134b0e5b2f4",
+    "size_bytes": 28870,
     "tags": [
       "english_source"
     ]
@@ -781,8 +781,8 @@
     "status": "active",
     "language": "en",
     "extension": ".docx",
-    "sha256": "48a837a2408a9cdb6f16b2465689352a3e77db53a3ae7661af1a7aeade4eebd0",
-    "size_bytes": 37666,
+    "sha256": "f45e9cfef6df68d62da00b5d2822be9bc869a5597b769b716da258c58073d45f",
+    "size_bytes": 37661,
     "tags": [
       "english_source"
     ]
@@ -790,15 +790,15 @@
   {
     "relative_path": "data/raw/products/PRD-API-ENG_1-8.md",
     "document_id": "PRD-API-ENG",
-    "title": "NovaTech service API reference",
+    "title": "Nattu service API reference",
     "version": "1.8",
     "department": "products",
     "classification": "Internal",
     "status": "active",
     "language": "en",
     "extension": ".md",
-    "sha256": "501e71c99f6aa9d4e53b6d6d4e25948bf369a78590e85566c2f0af69804d2ad0",
-    "size_bytes": 653,
+    "sha256": "5beb6f234d2fac3f5cab9ad73cedce526a3dacb68055fa196a42b14942e3cd78",
+    "size_bytes": 647,
     "tags": [
       "english_source"
     ]
@@ -813,8 +813,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "27a2986e7f190a83f704e9915598d4b4ddab1d7a0b7f37771fe4b7250baf5006",
-    "size_bytes": 30018,
+    "sha256": "045c748b6314fcfd7ad34cf30d6d0fe15f9866c10fb59842980f4d495292e47e",
+    "size_bytes": 29370,
     "tags": [
       "english_source"
     ]
@@ -829,8 +829,8 @@
     "status": "active",
     "language": "en",
     "extension": ".txt",
-    "sha256": "8cf6bcd5aad5820eef92760e3e9f686ff729285e45ed05b8aa8a76955bcdefe8",
-    "size_bytes": 661,
+    "sha256": "dedc2f036c2db3d0938c4a0a2b439231d118b595d1c48dc4908037ed5069c6b8",
+    "size_bytes": 658,
     "tags": [
       "english_source"
     ]
@@ -845,8 +845,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "14dc9100389818bf2d9d1d6f02ae1622cd17358d43a73f6b2862d9d91321205b",
-    "size_bytes": 29380,
+    "sha256": "f086e7c1f0539c4667c07af9bac0b8ecf976d73bd489b5b35c07bc5e0ecfc015",
+    "size_bytes": 28841,
     "tags": [
       "english_source"
     ]
@@ -861,8 +861,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "95f07f34bc3fc7e0d9d546ad7c73192bea7d0ce9455afca7699a7fc7897cd845",
-    "size_bytes": 29420,
+    "sha256": "903d543f0fc1f04bac0c541b3c00f852abcc2ca83491f410245e49916bf8e42c",
+    "size_bytes": 28874,
     "tags": [
       "english_source"
     ]
@@ -877,8 +877,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "c86661f6f5e5347ca8ebb77aa64aa4d7fe40f0cd75b06cad6f0ef09f6ed35774",
-    "size_bytes": 30465,
+    "sha256": "a301ec80cc8121dff2d52c39bb58ec356029a83115fe4955cabcaca29665b239",
+    "size_bytes": 29777,
     "tags": []
   },
   {
@@ -891,8 +891,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "acef0eebac6f28b879d2e426717f4609c37b198363759718a6c0331751f734c9",
-    "size_bytes": 29714,
+    "sha256": "495d748f287a85354450b48f11d80e9a39d4d862b4a414c34474e2ff20629154",
+    "size_bytes": 29137,
     "tags": []
   },
   {
@@ -905,8 +905,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "12d435da7d0883d1378f7a772617d5bfb17f570b58b03161866f67fe7e7a9f17",
-    "size_bytes": 29742,
+    "sha256": "87211164f93cc6829515537a963c3b97691152561b28d5a11d1499060ba6fa94",
+    "size_bytes": 29178,
     "tags": []
   },
   {
@@ -919,22 +919,22 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "e6e0b7811122c2070b73fb7e875ccc070cc485a414912570d962ca0df6eb1f8e",
-    "size_bytes": 37769,
+    "sha256": "4d1898f778960372f636b52951ebe781f1f39a7008b78b03dc935ad9b6caca8e",
+    "size_bytes": 37767,
     "tags": []
   },
   {
     "relative_path": "data/raw/support/SUP-FAQ-001_3-0.md",
     "document_id": "SUP-FAQ-001",
-    "title": "FAQ Support - produits NovaTech",
+    "title": "FAQ Support - produits Nattu",
     "version": "3.0",
     "department": "support",
     "classification": "Internal",
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "3bee39fbe752e766d5800c5f0b15ee5eacdb244ec6a0a5d482e12b22d195093e",
-    "size_bytes": 853,
+    "sha256": "c921c997c307d6895c78892cb4b0650dec80454cdc4554e9af7d2e414dc12485",
+    "size_bytes": 850,
     "tags": []
   },
   {
@@ -947,8 +947,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "b25621f8d56f70ee43ee1e6f82e1aaed3ac02b05a8534a03f82100a2f33d08f1",
-    "size_bytes": 37785,
+    "sha256": "1ca1cdac5d1d4758569d7568bec55e2f1450efc335653b4b9bc496f00d05c4e1",
+    "size_bytes": 37783,
     "tags": []
   },
   {
@@ -961,8 +961,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "fd6e6a21b9a29c45812bcb0a1b12ea57bf71b44e422e96f7e8c64ca3119c451b",
-    "size_bytes": 29777,
+    "sha256": "cbcd3cfba8e635084d5146a2168335aeeb60794893b3bff5a80c1f7ed62e34dc",
+    "size_bytes": 29205,
     "tags": []
   },
   {
@@ -975,8 +975,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "8f991140b926458546f5614087f46c3296840033396c2f5de93593924be6b354",
-    "size_bytes": 30423,
+    "sha256": "773adbfc09ec71b067755a8b1191cde3b81908ef435323543b28f681c4c31263",
+    "size_bytes": 29742,
     "tags": []
   },
   {
@@ -989,8 +989,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "0ef743b8ff777c70c582cef0fb88f8f44c7502cea5d62452901d82b8758801b7",
-    "size_bytes": 29738,
+    "sha256": "fca2b42626903557468953c38578d01a699fb8e5a49c7a1a5ccb545fe1d9c381",
+    "size_bytes": 29156,
     "tags": [
       "incident_exact_id"
     ]
@@ -1005,8 +1005,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "b4455c4b61409c29fbb444cdf826497878cc1d95509a9b2722a572a86d4e0878",
-    "size_bytes": 29714,
+    "sha256": "0957f625e472345ebfd2e836d04a69e8b77d24cc7de40a1a17cdd9a43b9f5852",
+    "size_bytes": 29139,
     "tags": [
       "incident_exact_id"
     ]
@@ -1021,8 +1021,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "3d758ba39dc0fee5f2677a1e1f6e96cd8add90cbb344cffb54f8e3ac664edbfc",
-    "size_bytes": 37760,
+    "sha256": "48c80f2c1b9babea803601869b14d209c1cfbc4d65fda3fecf208f66d873dffa",
+    "size_bytes": 37758,
     "tags": [
       "incident_exact_id"
     ]
@@ -1093,8 +1093,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "88ae2172fa786dc0fcff0bb37bafa29d83ea1d6ad33aadd0ac8a385082546559",
-    "size_bytes": 29742,
+    "sha256": "ece2cd6dc281ff58f0cdd6d0e7bccaa30aadb63d31516f60ec3a5ca7250199b7",
+    "size_bytes": 29176,
     "tags": []
   },
   {
@@ -1135,8 +1135,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "e89220b892fca83723fc1e8df679083af19731610a9a2e9bf575eac36efd08ad",
-    "size_bytes": 29776,
+    "sha256": "7a3e048969550026621deccbe6f0a8b58f7ff7e3db3de948156e0ea3628d8ff7",
+    "size_bytes": 29206,
     "tags": []
   },
   {
@@ -1149,8 +1149,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "bf76fb58e08bb4f0e039b8ce31ffd4df24998819c2660df1d8fa5a78fd569399",
-    "size_bytes": 29720,
+    "sha256": "98c92ab9d9a163c5e84b440cf673f3c3a45373060710db87c1a2586d285080c9",
+    "size_bytes": 29149,
     "tags": []
   },
   {
@@ -1163,8 +1163,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "767a828fe197ca0130a7cb1be08b7d24f011e26f217ded78b0b9de20a0812061",
-    "size_bytes": 37786,
+    "sha256": "4d02441659b8c12fa2a0852f12d24e28ef2c40861ab40550f6736f03cf577541",
+    "size_bytes": 37784,
     "tags": []
   },
   {
@@ -1177,8 +1177,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "e79675013f0a0d122f0b151a73fc7617295ef04ffbeb7c962d464e0051359980",
-    "size_bytes": 30448,
+    "sha256": "2b7ff72e74597c64a677a7542b3445961d254e30cbf129aa0eae595768bf0678",
+    "size_bytes": 29765,
     "tags": []
   },
   {
@@ -1191,8 +1191,8 @@
     "status": "active",
     "language": "en",
     "extension": ".md",
-    "sha256": "0c8b3a78b5250bd923d37a4f53284e65736430a7570f49c19eea97e2d9ec6bf7",
-    "size_bytes": 629,
+    "sha256": "66535744c0379e3ba13f06f0cc5e8b913ddd73849b85bfd0a3d9e00a0622db51",
+    "size_bytes": 626,
     "tags": []
   },
   {
@@ -1205,8 +1205,8 @@
     "status": "active",
     "language": "en",
     "extension": ".pdf",
-    "sha256": "ced84a6057784edcd6d75cbb118fb435deac56b3ac663541a85a4c5151e52155",
-    "size_bytes": 29374,
+    "sha256": "8c5ed7b4c002eccbffeb28e02b45dc9e247b4b7dad234e76de3d5493dacff4c9",
+    "size_bytes": 28838,
     "tags": []
   },
   {
@@ -1219,8 +1219,8 @@
     "status": "obsolete",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "096cc5c83f66e8feeec828b61ab4eb6240d8ba602ca597d0814bdb2e9a94bbff",
-    "size_bytes": 30585,
+    "sha256": "99729288a87f7e550affa373917c2d3271c1de561d3ff06a9917cde04500b65d",
+    "size_bytes": 29916,
     "tags": [
       "obsolete_version"
     ]
@@ -1235,8 +1235,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "f0094fb785b222fe3709536c8df0c9e97ef79bf4ec22b979f8c6e45f77a60a46",
-    "size_bytes": 37768,
+    "sha256": "791d172af784f6ad716e756ad26df3f559cdff39a29e689503d2b87a6ff93bdd",
+    "size_bytes": 37764,
     "tags": []
   },
   {
@@ -1249,8 +1249,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "a719389a178b0e121da602b9914848ac4d7611623f52263c90a23e57a6ac6586",
-    "size_bytes": 851,
+    "sha256": "9a9e5bd5780ea0e90148ed26356d04b35cc3f5fcb1ec3a3e50bb9b8655f4d9d0",
+    "size_bytes": 848,
     "tags": []
   },
   {
@@ -1263,8 +1263,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "11d8c316f44234072ccbc5d73b87e41e6b8100cd34973b4b3c6d8ce54e08635c",
-    "size_bytes": 29957,
+    "sha256": "d27aecebeb1ab2e0cef873c05a73f2f5fbd46490bd37889cb50f8b14c4c090f2",
+    "size_bytes": 29396,
     "tags": []
   },
   {
@@ -1277,8 +1277,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "d9748ba0750a8740bf60ef9548a64b43fb337b5068a25323a672e2bb4a215f91",
-    "size_bytes": 29978,
+    "sha256": "22b87867c71a13816a5629a0a410330085a9853eb5c08833bf70d0629cd03d32",
+    "size_bytes": 29412,
     "tags": []
   },
   {
@@ -1291,8 +1291,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "01d9b56ed61ac46118eb721bc294b1cd537b466d4fa1d2bb9cb71e17c9ef4d16",
-    "size_bytes": 37769,
+    "sha256": "f723947f3e9b4381490a25f4453fbb4ce97d083fd8828b12224ece51d564dd4a",
+    "size_bytes": 37764,
     "tags": []
   },
   {
@@ -1305,8 +1305,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "79eeb329b47f621672c4c1f2b079de99d3bb5bbf96345ebf578841dc8c51791c",
-    "size_bytes": 880,
+    "sha256": "206ac83f05ff3be3b7b3e7f22596b9f7d6df5e0b0f4d126de3b7e98a3a61f3f1",
+    "size_bytes": 877,
     "tags": []
   },
   {
@@ -1319,8 +1319,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "3c647028fc752c87dfca3fd3974cf60ca675ab38bbef77ce345d8bbc48a43267",
-    "size_bytes": 29976,
+    "sha256": "61f645d7bac31af465e4054bada2e1ad7f4b2dff20d9c2130abd67b7fd286fd2",
+    "size_bytes": 29412,
     "tags": []
   },
   {
@@ -1333,8 +1333,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "6d8831d60b8a6944128683d700752841d8f1ed884941ed04fc1512d0402ac851",
-    "size_bytes": 29968,
+    "sha256": "52d3eaf221ef569164eb28a2e16d2f8d8737e9a9e3082d54e0c7ec3053f2edb9",
+    "size_bytes": 29404,
     "tags": []
   },
   {
@@ -1347,8 +1347,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "b5f00a0bbacfd34a60505076df92731badefcc92ea17792fe1006b0b4d846ff7",
-    "size_bytes": 37766,
+    "sha256": "5272dd49b9996817c7b4951f03082da470278a74fee4e4ee26ccfe03968b5f07",
+    "size_bytes": 37761,
     "tags": []
   },
   {
@@ -1361,8 +1361,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "1769d6a2f51b14e2bada77727899da1aea6b46fddc940f1ea85bce99ed1d114e",
-    "size_bytes": 860,
+    "sha256": "9b68dee00d14f9e2233d33d38ac58eee7b717b5554890b3561d97e7e0d37707e",
+    "size_bytes": 857,
     "tags": []
   },
   {
@@ -1375,8 +1375,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "5a64d98a0dba9a1e89502100d1e5a234b307fd3c8f488f2677f706cfbe188135",
-    "size_bytes": 29997,
+    "sha256": "1677babab547b0f3cabf62e08f64bad085e6eec43ae8fa170baf3a35f74ada29",
+    "size_bytes": 29419,
     "tags": [
       "restricted_acl"
     ]
@@ -1391,8 +1391,8 @@
     "status": "draft",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "19cb1a0de36aa8c67da87b78e3c99dcb38971b0fdbdf7d94c02fd8b67a43b51f",
-    "size_bytes": 30873,
+    "sha256": "aa2272da83ee50bba1e1bc6b0f87ef852803c5dc375211a9f6cbd6a4c03ec606",
+    "size_bytes": 30184,
     "tags": [
       "restricted_acl"
     ]
@@ -1407,8 +1407,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "e518e23b55b3ba5065cf8f1af25bf051a9c411dfcf7a69c4c767dfa99b0181fb",
-    "size_bytes": 37764,
+    "sha256": "f302beddd2fe1a8a902652c7ab0d36a85a6ed8beee12cdab19d6919008afcd22",
+    "size_bytes": 37759,
     "tags": []
   },
   {
@@ -1421,8 +1421,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "63c3ef1f8e415f8688a5d89436917deb80dd9fa6637c9533970119ee48ec457e",
-    "size_bytes": 871,
+    "sha256": "835bc46456887036c6dcb82630af53d32b29acc5217a03458eb7117cb188d830",
+    "size_bytes": 868,
     "tags": []
   },
   {
@@ -1435,8 +1435,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "7f61b705c6acac2473e8ff7e849418bf8a9885500de8a4829e6feced354e13ea",
-    "size_bytes": 29992,
+    "sha256": "d73d74c9954b0f56e5619a808cd0b5326139b9c2bbbaabb54cb465da5fe56f99",
+    "size_bytes": 29426,
     "tags": []
   },
   {
@@ -1449,8 +1449,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "c95c131c27286b4c28075c0920a8545e17ac17b679066b1f8a9d0a88f4865593",
-    "size_bytes": 29981,
+    "sha256": "82f20d69390f0bdb53748ef202577426976cf8994f5e7665e49f78d3687fbf95",
+    "size_bytes": 29414,
     "tags": [
       "restricted_acl"
     ]
@@ -1465,8 +1465,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".docx",
-    "sha256": "fa0a0b9fd56ef100f9945cb5ba5f5713e0a454cd26530c186fa6a8577f7fcad7",
-    "size_bytes": 37783,
+    "sha256": "60bd8af067a8822ff97833f5360b2654f9803b90f6c37a6907e1b9a0c3ecb222",
+    "size_bytes": 37779,
     "tags": []
   },
   {
@@ -1479,8 +1479,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".md",
-    "sha256": "96f1d13cdfb5309bb1e4c1beebc7fb0898a82066e896a3a1ba5d0b93bf31ff49",
-    "size_bytes": 845,
+    "sha256": "e2ff46c8ab9e4761fb52cab772688445479df1782e6c6fa69ca933321068965f",
+    "size_bytes": 842,
     "tags": []
   },
   {
@@ -1493,8 +1493,8 @@
     "status": "active",
     "language": "fr",
     "extension": ".pdf",
-    "sha256": "1cb5b05c6aa82d1498eea6c3e4d3102e6dbc79b26cd8855742429c8481f6ba4f",
-    "size_bytes": 29977,
+    "sha256": "b95750111b9d938932c78cdab45515d96cd032702e9c115ed20a8846cbbc1888",
+    "size_bytes": 29414,
     "tags": []
   }
 ]

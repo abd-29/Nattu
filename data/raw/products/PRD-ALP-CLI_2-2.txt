@@ -10,7 +10,7 @@ Statut : En vigueur
 Langue : en
 
 1. Purpose
-This document supports NovaTech engineering and service teams for international deployments.
+This document supports Nattu engineering and service teams for international deployments.
 
 2. Key requirement
 Command 'diag status' returns power, temperature and firmware information.

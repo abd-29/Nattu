@@ -1,4 +1,4 @@
-# FAQ Support - produits NovaTech
+# FAQ Support - produits Nattu
 
 **Référence :** SUP-FAQ-001
 **Version :** 3.0

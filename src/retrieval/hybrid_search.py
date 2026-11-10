@@ -273,7 +273,7 @@ def build_context(results: list[dict]) -> str:
 def build_llm_prompt(query: str, context: str) -> str:
     """Build the final prompt sent to the LLM."""
     return f"""
-Tu es un assistant interne de NovaTech Industries.
+Tu es un assistant interne de Nattu Industries.
 
 Réponds uniquement à partir du contexte fourni.
 

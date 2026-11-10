@@ -1,4 +1,4 @@
-name: NovaTech CI
+name: Nattu CI
 
 on:
   push:

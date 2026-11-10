@@ -10,7 +10,7 @@
 
 ## 1. Objet
 
-Cette politique s'applique aux salariés NovaTech en France. Les situations particulières doivent être adressées au service Ressources humaines avant toute décision engageant l'entreprise.
+Cette politique s'applique aux salariés Nattu en France. Les situations particulières doivent être adressées au service Ressources humaines avant toute décision engageant l'entreprise.
 
 ## 2. Règle principale
 

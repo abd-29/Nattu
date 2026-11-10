@@ -23,7 +23,11 @@ def clean_text(text: str) -> str:
         if re.fullmatch(r"\d+", normalized_line):
             continue
 
-        if normalized_line.startswith("NovaTech Industries - Document interne"):
+        # Accept the current identity and headers from historical documents.
+        if normalized_line.startswith((
+            "Nattu Industries - Document interne",
+            "NovaTech Industries - Document interne",
+        )):
             continue
 
         cleaned_lines.append(line.strip())

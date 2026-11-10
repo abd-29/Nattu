@@ -1,5 +1,5 @@
 [project]
-name = "novatech"
+name = "nattu"
 version = "1.0.0"
 description = "Enterprise RAG assistant with access control"
 authors = [

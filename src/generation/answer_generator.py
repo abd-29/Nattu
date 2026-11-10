@@ -24,17 +24,26 @@ def generate_answer(prompt: str) -> str:
 
 
 def generate_general_answer(query: str) -> str:
-    """Generate a general answer when internal documents cannot answer."""
+    """Generate a concise general answer."""
     prompt = f"""
-Réponds à la question suivante à partir de tes connaissances générales.
+Tu es Nattu Assistant.
+
+Réponds directement et simplement à la question de l'utilisateur.
+
+Règles obligatoires :
+- Donne uniquement la réponse utile.
+- Pas d'introduction.
+- Pas de conclusion inutile.
+- Ne mentionne jamais "mes connaissances générales".
+- Ne mentionne jamais que la réponse ne vient pas des documents.
+- Ne reformule pas la question.
+- Pour une salutation, réponds simplement par une salutation.
+- Sois concis.
 
 Question :
 {query}
-
-Réponse :
-""".strip()
-
-    return call_llm(prompt)
+"""
+    return call_llm(prompt).strip()
 
 
 def check_answerability(query: str, context: str) -> list[int]:

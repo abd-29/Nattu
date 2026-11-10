@@ -21,8 +21,8 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
 app = FastAPI(
-    title="NovaTech RAG API",
-    description="NovaTech RAG assistant API",
+    title="Nattu RAG API",
+    description="Nattu RAG assistant API",
     version="2.0.0",
 )
 
@@ -125,7 +125,7 @@ def health():
     """Check API availability."""
     return {
         "status": "ok",
-        "service": "NovaTech RAG API",
+        "service": "Nattu RAG API",
     }
 
 
@@ -163,7 +163,7 @@ def me(user: Annotated[User, Depends(get_current_user)]):
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest, user: Annotated[User, Depends(get_current_user)]):
-    """Ask a question to the NovaTech RAG assistant."""
+    """Ask a question to the Nattu RAG assistant."""
     result = answer_query(
         query=request.query,
         embedding_model=get_embedding_model(),

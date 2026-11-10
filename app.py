@@ -8,7 +8,7 @@ from src.retrieval.hybrid_search import answer_query
 from src.retrieval.reranker import load_reranker
 
 
-st.set_page_config(page_title="Nova Assistant", page_icon="💬", layout="centered")
+st.set_page_config(page_title="Nattu Assistant", page_icon="💬", layout="centered")
 
 
 @st.cache_resource
@@ -28,8 +28,8 @@ def load_state():
 
 def login_page():
     """Display the authentication page."""
-    st.title("Nova Assistant")
-    st.caption("Assistant documentaire interne de NovaTech Industries")
+    st.title("Nattu Assistant")
+    st.caption("Assistant documentaire interne de Nattu Industries")
 
     with st.form("login_form"):
         username = st.text_input("Nom d'utilisateur")
@@ -60,8 +60,8 @@ def chat_page():
     user = st.session_state.user
 
     with st.sidebar:
-        st.image("assets/logo.png", width=180)
-        st.title("NovaTech")
+        st.image("assets/logo.png", width=300)
+        st.title("Nattu")
         st.success(f"Connecté : {user.username}")
         st.write(f"Département : **{user.department}**")
         st.write(f"Rôle : **{user.role}**")
@@ -69,8 +69,8 @@ def chat_page():
         if st.button("Se déconnecter", use_container_width=True):
             logout()
 
-    st.title("Nova Assistant")
-    st.caption("Posez une question sur la documentation interne de NovaTech.")
+    st.title("Nattu Assistant")
+    st.caption("Posez une question sur la documentation interne de Nattu.")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []

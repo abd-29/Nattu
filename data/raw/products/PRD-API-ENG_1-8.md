@@ -1,4 +1,4 @@
-# NovaTech service API reference
+# Nattu service API reference
 
 **Référence :** PRD-API-ENG
 **Version :** 1.8
@@ -10,7 +10,7 @@
 
 ## 1. Purpose
 
-This document supports NovaTech engineering and service teams for international deployments.
+This document supports Nattu engineering and service teams for international deployments.
 
 ## 2. Key requirement
 

@@ -1,4 +1,4 @@
-# Glossaire qualité NovaTech
+# Glossaire qualité Nattu
 
 **Référence :** QUA-GLOSSARY-017
 **Version :** 1.3
@@ -10,7 +10,7 @@
 
 ## 1. Objet
 
-Cette procédure s'applique à l'ensemble des produits NovaTech livrés aux clients et aux activités associées de support, d'ingénierie et de production. Les enregistrements doivent être traçables, datés et rattachés à une référence unique.
+Cette procédure s'applique à l'ensemble des produits Nattu livrés aux clients et aux activités associées de support, d'ingénierie et de production. Les enregistrements doivent être traçables, datés et rattachés à une référence unique.
 
 ## 2. Règles principales
 

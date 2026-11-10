@@ -1,4 +1,4 @@
-# Corpus d'entreprise fictif NovaTech Industries
+# Corpus d'entreprise fictif Nattu Industries
 
 Ce corpus est destiné au développement et à l'évaluation d'un RAG d'entreprise.
 

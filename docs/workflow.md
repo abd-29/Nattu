@@ -1,4 +1,4 @@
-# NovaTech RAG Workflow
+# Nattu RAG Workflow
 
 ## 1. Indexing workflow
 

@@ -10,7 +10,7 @@
 
 ## 1. Purpose
 
-This document supports cross-region NovaTech service operations.
+This document supports cross-region Nattu service operations.
 
 ## 2. Key instruction
 
