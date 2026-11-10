@@ -195,13 +195,13 @@ to produce a more accurate ranking.
 
 The indexing pipeline handles:
 
-- document ID;
-- version;
-- department;
-- classification;
-- status;
-- language;
-- date;
+- document ID
+- version
+- department
+- classification
+- status
+- language
+- date
 - source.
 
 The system can also detect:
@@ -531,14 +531,14 @@ Nattu/
 
 The project implements several security principles:
 
-- password hashing;
-- JWT authentication;
-- token expiration;
-- database-side user verification;
-- inactive account handling;
-- access control before reranking;
-- unauthorized documents are never sent to the LLM;
-- API keys are stored in environment variables;
+- password hashing
+- JWT authentication
+- token expiration
+- database-side user verification
+- inactive account handling
+- access control before reranking
+- unauthorized documents are never sent to the LLM
+- API keys are stored in environment variables
 - GitHub Secrets are used for CI/CD.
 
 ---
@@ -549,14 +549,14 @@ This project is designed as an enterprise RAG architecture simulation.
 
 Possible future improvements include:
 
-- refresh tokens;
-- centralized JWT revocation;
-- finer-grained permissions by document or group;
-- observability and metrics;
-- rate limiting;
-- cloud deployment of the API;
-- RAG performance monitoring;
-- integration tests using a dedicated PostgreSQL database;
+- refresh tokens
+- centralized JWT revocation
+- finer-grained permissions by document or group
+- observability and metrics
+- rate limiting
+- cloud deployment of the API
+- RAG performance monitoring
+- integration tests using a dedicated PostgreSQL database
 - user administration through a dedicated interface.
 
 ---
