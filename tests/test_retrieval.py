@@ -1,4 +1,4 @@
-from src.retrieval.hybrid_search import reciprocal_rank_fusion
+from src.retrieval.utils import reciprocal_rank_fusion
 
 def test_rrf_prioritizes_common_result():
     vector_results = [

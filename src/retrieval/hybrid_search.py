@@ -10,6 +10,7 @@ from src.embeddings.embedding_model import embed_texts
 from src.generation.answer_generator import generate_answer, check_answerability, generate_general_answer
 from src.indexing.index_state import load_index_state
 from src.retrieval.reranker import load_reranker, rerank_results
+from src.retrieval.utils import reciprocal_rank_fusion, extract_version_filter
 from src.vectorstore.database import get_connection
 
 
@@ -128,43 +129,6 @@ def lexical_search(
         }
         for row in rows
     ]
-
-
-def reciprocal_rank_fusion(
-    vector_results: list[dict],
-    lexical_results: list[dict],
-    k: int = 60,
-) -> list[dict]:
-    """Fuse vector and lexical rankings using RRF."""
-    fused = {}
-
-    for rank, result in enumerate(vector_results, start=1):
-        chunk_id = result["chunk_id"]
-
-        if chunk_id not in fused:
-            fused[chunk_id] = {
-                **result,
-                "rrf_score": 0.0,
-            }
-
-        fused[chunk_id]["rrf_score"] += 1 / (k + rank)
-
-    for rank, result in enumerate(lexical_results, start=1):
-        chunk_id = result["chunk_id"]
-
-        if chunk_id not in fused:
-            fused[chunk_id] = {
-                **result,
-                "rrf_score": 0.0,
-            }
-
-        fused[chunk_id]["rrf_score"] += 1 / (k + rank)
-
-    return sorted(
-        fused.values(),
-        key=lambda item: item["rrf_score"],
-        reverse=True,
-    )
 
 
 def deduplicate_results(results: list[dict]) -> list[dict]:
@@ -597,20 +561,6 @@ def retrieve_query(
         "results": final_results,
         "conflict": None,
     }
-
-
-def extract_version_filter(query: str) -> str | None:
-    """Extract an explicit document version from the query."""
-    match = re.search(
-        r"\bversion\s+(\d+(?:\.\d+){1,3})\b",
-        query,
-        flags=re.IGNORECASE,
-    )
-
-    if match is None:
-        return None
-
-    return match.group(1)
 
 
 def answer_query(
