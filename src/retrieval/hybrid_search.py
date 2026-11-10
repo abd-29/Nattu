@@ -20,13 +20,7 @@ def build_lexical_query(query: str) -> str:
     return " OR ".join(words)
 
 
-def vector_search(
-    query: str,
-    model: SentenceTransformer,
-    user: User,
-    limit: int = 10,
-    version: str | None = None,
-) -> list[dict]:
+def vector_search(query: str, model: SentenceTransformer, user: User, limit: int = 10, version: str | None = None) -> list[dict]:
     """Retrieve authorized chunks using cosine similarity."""
     query_embedding = embed_texts(texts=[query], model=model)[0]
 
@@ -34,18 +28,26 @@ def vector_search(
         with connection.cursor() as cursor:
             cursor.execute(
                 """
-                SELECT chunk_id, document_id, version, text, source, start_page, end_page,
-                       1 - (embedding <=> %s) AS score
-                FROM document_chunks
-                WHERE (
-                    classification = 'public'
-                    OR classification = 'internal'
-                    OR (classification = 'restricted' AND department = %s)
-                    OR (classification = 'confidential' AND %s = 'admin')
-                )
-                AND (%s::text IS NULL OR version = %s)
-                ORDER BY embedding <=> %s
-                LIMIT %s;
+                SELECT
+                    dc.chunk_id,
+                    dc.document_id,
+                    dc.version,
+                    dc.text,
+                    dc.source,
+                    dc.start_page,
+                    dc.end_page,
+                    1 - (dc.embedding <=> %s) AS score
+                FROM document_chunks dc
+                WHERE
+                    (
+                        dc.classification = 'public'
+                        OR dc.classification = 'internal'
+                        OR (dc.classification = 'restricted' AND dc.department = %s)
+                        OR (dc.classification = 'confidential' AND %s = 'admin')
+                    )
+                    AND (%s::text IS NULL OR dc.version = %s)
+                    ORDER BY dc.embedding <=> %s
+                    LIMIT %s;
                 """,
                 (
                     Vector(query_embedding),
@@ -74,12 +76,7 @@ def vector_search(
     ]
 
 
-def lexical_search(
-    query: str,
-    user: User,
-    limit: int = 10,
-    version: str | None = None,
-) -> list[dict]:
+def lexical_search(query: str, user: User, limit: int = 10, version: str | None = None) -> list[dict]:
     """Retrieve authorized chunks using PostgreSQL full-text search."""
     lexical_query = build_lexical_query(query)
 
@@ -87,22 +84,31 @@ def lexical_search(
         with connection.cursor() as cursor:
             cursor.execute(
                 """
-                SELECT chunk_id, document_id, version, text, source, start_page, end_page,
-                       ts_rank_cd(
-                           to_tsvector('french', text),
-                           websearch_to_tsquery('french', %s)
-                       ) AS score
-                FROM document_chunks
-                WHERE to_tsvector('french', text) @@ websearch_to_tsquery('french', %s)
-                AND (
-                    classification = 'public'
-                    OR classification = 'internal'
-                    OR (classification = 'restricted' AND department = %s)
-                    OR (classification = 'confidential' AND %s = 'admin')
-                )
-                AND (%s::text IS NULL OR version = %s)
-                ORDER BY score DESC
-                LIMIT %s;
+                SELECT
+                    dc.chunk_id,
+                    dc.document_id,
+                    dc.version,
+                    dc.text,
+                    dc.source,
+                    dc.start_page,
+                    dc.end_page,
+                    ts_rank_cd(
+                        to_tsvector('french', dc.text),
+                        websearch_to_tsquery('french', %s)
+                    ) AS score
+                FROM document_chunks dc
+                WHERE
+                    to_tsvector('french', dc.text)
+                    @@ websearch_to_tsquery('french', %s)
+                    AND (
+                        dc.classification = 'public'
+                        OR dc.classification = 'internal'
+                        OR (dc.classification = 'restricted' AND dc.department = %s)
+                        OR (dc.classification = 'confidential' AND %s = 'admin')
+                    )
+                    AND (%s::text IS NULL OR dc.version = %s)
+                    ORDER BY score DESC
+                    LIMIT %s;
                 """,
                 (
                     lexical_query,
@@ -182,11 +188,54 @@ def hybrid_search(
 
 
 def version_key(version: str) -> tuple:
-    """Convert a version string into a sortable tuple."""
-    try:
-        return tuple(int(part) for part in version.split("."))
-    except (AttributeError, ValueError):
-        return (0,)
+    """Convert a version string into a natural sortable key."""
+    if not version:
+        return ()
+
+    parts = re.findall(r"\d+|[A-Za-z]+", version)
+
+    return tuple(
+        (0, int(part))
+        if part.isdigit()
+        else (1, part.lower())
+        for part in parts
+    )
+
+
+def keep_latest_versions(
+    results: list[dict],
+    index_state: dict,
+) -> list[dict]:
+    """Keep only the latest version of each retrieved document."""
+    latest_versions = {}
+
+    document_ids = {
+        result["document_id"]
+        for result in results
+    }
+
+    for document_id in document_ids:
+        versions = [
+            state["version"]
+            for state in index_state.values()
+            if state["document_id"] == document_id
+        ]
+
+        if versions:
+            latest_versions[document_id] = max(
+                versions,
+                key=version_key,
+            )
+
+    return [
+        result
+        for result in results
+        if (
+            result["document_id"] not in latest_versions
+            or result["version"]
+            == latest_versions[result["document_id"]]
+        )
+    ]
 
 
 def find_blocking_conflict(
@@ -372,6 +421,14 @@ def retrieve_query(
         user=user,
         limit=retrieval_limit,
     )
+
+    explicit_version = extract_version_filter(query)
+
+    if explicit_version is None:
+        results = keep_latest_versions(
+            results=results,
+            index_state=index_state,
+        )
 
     results = rerank_results(
         query=query,
@@ -629,11 +686,21 @@ def answer_query(
 
     answer = generate_answer(prompt)
 
+    cited_source_numbers = {
+        int(number) for number in re.findall(r"Source\s+(\d+)", answer)
+    }
+
+    cited_results = [
+        result
+        for index, result in enumerate(results, start=1)
+        if index in cited_source_numbers
+    ]
+
     return {
         "status": "success",
         "query": query,
         "answer": answer,
-        "results": results,
+        "results": cited_results,
         "conflict": None,
     }
 
