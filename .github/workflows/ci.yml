@@ -31,4 +31,6 @@ jobs:
         run: poetry run python -m compileall src app.py
 
       - name: Run tests
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: poetry run pytest
